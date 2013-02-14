@@ -4,4 +4,5 @@ class Attendee < ActiveRecord::Base
 
   validates_presence_of :Surname, :name
   validates_format_of :Email, with: /@/
+  validates_uniqueness_of :Email
 end
