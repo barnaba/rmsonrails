@@ -1,4 +1,5 @@
 class AttendeesController < ApplicationController
+  before_filter :registration_enabled, :only => ['create', 'new']
   # GET /attendees
   # GET /attendees.json
   def index
@@ -7,18 +8,6 @@ class AttendeesController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @attendees }
-    end
-  end
-
-  # GET /attendees/1
-  # GET /attendees/1.json
-  def show
-    @attendee = Attendee.find(params[:id])
-    @registration_in_progress = true
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @attendee }
     end
   end
 
@@ -34,14 +23,15 @@ class AttendeesController < ApplicationController
     end
   end
 
-  # GET /attendees/1/edit
-  def edit
-    @attendee = Attendee.find(params[:id])
-  end
-
   # POST /attendees
   # POST /attendees.json
   def create
+
+    unless @registration_enabled
+      redirect_to root_path
+      return
+    end
+
     @attendee = Attendee.new(params[:attendee])
     @attendee.valid?
 
@@ -58,31 +48,9 @@ class AttendeesController < ApplicationController
     end
   end
 
-  # PUT /attendees/1
-  # PUT /attendees/1.json
-  def update
-    @attendee = Attendee.find(params[:id])
+  private
 
-    respond_to do |format|
-      if @attendee.update_attributes(params[:attendee])
-        format.html { redirect_to @attendee, notice: 'Your registration was successful' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @attendee.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # DELETE /attendees/1
-  # DELETE /attendees/1.json
-  def destroy
-    @attendee = Attendee.find(params[:id])
-    @attendee.destroy
-
-    respond_to do |format|
-      format.html { redirect_to attendees_url }
-      format.json { head :no_content }
-    end
+  def registration_enabled
+    @registration_enabled = Date.today() >= Date.parse("01/03/2013")
   end
 end

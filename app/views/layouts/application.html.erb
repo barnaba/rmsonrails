@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Registration form for Richard Stallman talks. Warsaw, 13 March 2013</title>
+    <title>Richard Stallman - Warszawa, 13 Marca 2013</title>
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -36,10 +36,10 @@
               <div class="span7 tabbable main-page-content">
                 <nav>
                 <ul class="nav nav-tabs">
-                  <li class="<%= @registration_in_progress ? "" : "active" %>"><a href="#main" data-toggle="tab">Info</a></li>
-                  <li><a href="#bio" data-toggle="tab">Bio</a></li>
-                  <li><a href="#lecture" data-toggle="tab">Lecture</a></li>
-                  <li class="<%= @registration_in_progress ? "active" : "" %>"><a href="#registration" data-toggle="tab">Register!</a></li>
+                  <li class="<%= @registration_in_progress ? "" : "active" %>"><a href="#main" data-toggle="tab">Program</a></li>
+                  <li><a href="#bio" data-toggle="tab">O gościu</a></li>
+                  <li><a href="#lecture" data-toggle="tab">Wykład</a></li>
+                  <li class="<%= @registration_in_progress ? "active" : "" %>"><a href="#registration" data-toggle="tab">Rejestracja</a></li>
                   <li><a href="#stream" data-toggle="tab">Stream</a></li>
                 </ul>
                 </nav>
@@ -47,58 +47,52 @@
                 <div class="tab-content">
                   <div id="main" class="tab-pane<%= @registration_in_progress ? "" : " active" %>">
                     <a name="main"></a>
-                    <h2> Info </h2>
-                    <p>We are happy to announce, that Richard Stallman, the President of Free Software Foundation, pioneer of copyleft and free software, known for his work in <b>GNU</b>, <b>Emacs</b> and <b>GCC</b> visits Poland.
-                      During his visit he's going to give a lecture on the topic of „Free Software and Your Freedom” at <b>Warsaw University Of Technology</b>.
-                    </p>
+                    <h2> Program wizyty </h2>
                     <p>
-                      The prelection will take place in <b>Lorem Ipsum PW</b> at <time datetime="2013-03-12T13:37+01:00">12.03.2013 13:37</time>.
-                      <!--TODO: prawidłowa data i miejsce-->
+                      12 marca 2013 do Polski przyleci Richard Stallman. Celem jego wizyty jest Studencki Festiwal Informatyczny, który odbywa się w dniach 14-16 marca na krakowskiej Akademii Górniczo-Hutniczej[a]. Dzień wcześniej, 13 marca odbędzie się cykl spotkań ze Stallmanem w Warszawie.
+                      <p>
+                        Głównym z nich jest wykład, który odbędzie się o godz. 12 na Politechnice Warszawskiej. Tego dnia Stallman odwiedzi również Fundację Nowoczesna Polska, Centrum Cyfrowe (godz. 18) oraz Warszawski Hackerspace (godz. 21).
+                      </p>
                     </p>
                   </div>
 
                   <div id="bio" class="tab-pane">
                     <a name="bio"></a>
-                    <h2> Bio </h2>
-                    <p>Dr. Richard Stallman launched the free software movement in 1983 and
-                      started the development of the GNU operating system (see <a href="http://www.gnu.org">www.gnu.org</a>)
-                      in 1984.</p>
-                    <p>GNU is free software: everyone has the freedom to copy it
-                      and redistribute it, with or without changes.  The GNU/Linux system,
-                      basically the GNU operating system with Linux added, is used on tens
-                      of millions of computers today.</p>
-                    <p>Stallman has received the ACM Grace
-                      Hopper Award, a MacArthur Foundation fellowship, the Electronic
-                      Frontier Foundation's Pioneer Award, and the the Takeda Award for
-                      Social/Economic Betterment, as well as several honorary doctorates.</p>
+                    <h2> Sylwetka gościa</h2>
+                    <p>
+                      Dr Richard Stallman zapoczątkował ruch wolnego oprogramowania w roku 1983 i rozpoczął rozwijanie systemu operacyjnego GNU (www.gnu.org) w roku 1984. GNU jest wolnym oprogramowaniem: każdemu wolno je kopiować i rozpowszechniać zarówno ze zmianami jak i bez. System GNU/Linux, czyli system operacyjny GNU z dodanym Linuksem jest dziś używany na dziesiątkach milionów komputerów. 
+                    </p>
+                    <p>
+                      Stallman otrzymał nagrodę ACM imienia Grace Hopper, stypendium Fundacji MacArthur, Nagrodę Pioniera od Electronic Frontier Foundation, Nagrodę Takeda za „Ulepszenia Społeczno-Ekonomiczne”, a także kilka honorowych doktoratów.
+                    </p>
                   </div>
 
                   <div id="lecture" class="tab-pane">
                     <a name="lecture"></a>
-                    <h2> Lecture details </h2>
+                    <h2> Szczegóły wykładu</h2>
                     <p>
-                      Activities directed at "including" more people in the use of digital
-                      technology are predicated on the assumption that such inclusion is
-                      invariably a good thing.  It appears so, when judged solely by
-                      immediate practical convenience.  However, if we also judge in terms
-                      of human rights, whether digital inclusion is good or bad depends on
-                      what kind of digital world we are to be included in.  If we wish to
-                      work towards digital inclusion as a goal, it behooves us to make sure
-                      it is the good kind.
+                      Tytuł wykładu to „Wolne społeczeństwo cyfrowe” (oryg. „A free digital society”). Wiele w Polsce mówi się o tak zwanym „cyfrowym wykluczeniu” jako przeciwieństwie partycypacji w osiągnięciach najnowszej techniki, w szczególności komputerowej. Traktuje się przy tym cyfrowe wykluczenie bezwzględnie jako zło, które należy likwidować, a to z kolei oznacza automatyczne wprowadzenie w to miejsce czegoś dobrego. Stallman oferuje głębszą refleksję nad pytaniem o dobre i złe strony cyfrowego uczestnictwa w kulturze.
+                    </p>
+                    <p>
+                      Według Stallmana: „Działania zmierzające do włączenia większej liczby osób w używanie cyfrowych technologii oparte są na założeniu, że niewątpliwie taka partycypacja jest rzeczą bez wątpienia dobrą. Z praktycznego punktu widzenia to bardzo wygodna teza. Wydaje się tak, jesli bierzemy pod uwagę jedynie praktyczną wygodę. Jednakże, jeśli jednak spojrzymy na nią z perspektywydokonamy oceny również pod względem praw człowieka, takie cyfrowe włączenie może być zarówno dobre jak i złe – w zależności od tego, do jakiego rodzaju cyfrowego świata zostajemy włączeni. Jeśli naszym celem jest cyfrowa partycypacja, powinniśmy mieć pewność, że jest to rzecz dobra.”
                     </p>
                   </div>
 
                   <div id="registration" class="tab-pane<%= @registration_in_progress ? " active" : "" %>">
                     <a name="registration"></a>
-                    <h2> Registration (optional) </h2>
+                    <h2> Rejestracja (opcjonalna) </h2>
+                    <p> Rejestracja <b>nie</b> jest obowiązkowa, ale osoby zarejestrowane będą miały <b>pierwszeństwo</b> w wypadku braku miejsc na sali (miejsca na około 300 osób). </p>
+                    <p> Rejestracja dotyczy tylko głównego spotkania - wykładu Richarda Stallmana na Politechnice Warszawskiej </p>
+                    <p> Zbierane dane zostaną wykorzystane tylko przez obsługę spotkania. Możliwe że e-mail będzie potrzebny do potwierdzenia rejestracji na kilka dni przed spotkaniem. Może być także użyty do przesyłania informacji o ważnych zmianach w programie spotkania lub informacjach o podobnych wydarzeniach - jeśli się na to zgodzisz.</p>
+                    <p> <b>Rejestracja zostanie otwarta 1-go Marca 2013</b> </p>
                     <%= yield %>
                   </div>
 
                   <div id="stream" class="tab-pane">
                     <a name="stream"></a>
-                    <h2> Here be streams</h2>
+                    <h2> Oglądaj na żywo </h2>
                     <p>
-                      Lorem ipsum.
+                      Planujemy umożliwić oglądanie zarówno wykładu jak i spotkania dyskusyjnego na żywo. Więcej informacji wkrótce.
                     </p>
                   </div>
                 </div>
