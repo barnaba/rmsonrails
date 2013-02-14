@@ -2,6 +2,10 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 pl:
+  layout:
+    organized_by: "Oganizatorzy"
+    media_partners: "Patroni medialni"
+
   helpers:
     label:
       attendee:
@@ -9,8 +13,7 @@ pl:
         name: "Imię"
         Surname: "Nazwisko"
         captcha: "Tekst z obrazka"
-  layout:
-    organized_by: "Oganizatorzy"
+
   activerecord:
     attributes:
       attendee:
@@ -26,6 +29,7 @@ pl:
             Email:
               invalid: "Podany adres email jest nieprawidłowy."
               taken:   "Podany adres email jest już zarejestrowany. Skontaktuj się z osobą odpowiedzialną za rejestrację: michal@zapu.net"
+
   notice:
     registration:
       success: "Rejestracja zakończona sukcesem"
