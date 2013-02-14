@@ -2,8 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-html, #wrap{ height: 100%; }
-body > #wrap{ height: auto; min-height: 100%; }
+html { height: 100%; }
+#wrap{ position: relative; min-height: 100%; }
 
 #recaptcha_widget_div {
   margin-left: 40px;
@@ -89,8 +89,17 @@ div#content .main-page-content .tab-content {
   margin-right: 30px;
 }
 
+#content > .row {
+  padding-bottom: 150px;
+}
+
 
 /*footer*/
+#footer {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+}
 
 #footer span {
     background: none repeat scroll 0 0 #995F1F;
@@ -109,15 +118,11 @@ div#content .main-page-content .tab-content {
 #footer .footer-content {
   clear: both;
   background-color: #E2C454;
-  position: relative;
   z-index: 10;
-  height: 100px;
-  margin-top: -100px;
   margin-left: 200px;
   width: 1000px;
   border-radius: 10px 10px 0 0;
   box-shadow: 2px 3px 3px #666666;
-  padding-top: 10px;
   text-align: center;
 }
 
