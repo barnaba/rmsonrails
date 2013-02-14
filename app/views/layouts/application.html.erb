@@ -25,9 +25,12 @@
       <div id="content">
         <div class="row" id="container">
           <div class="main-page-container offset2 span10">
+            <% if notice %>
+              <p id="notice" class="alert alert-success"><%= notice %></p>
+            <% end %>
             <div class="row">
               <aside class="span3">
-                <img src="<%= image_path "rms.jpg" %>" alt="Picture of Richard Stallman" />
+              <img src="<%= image_path "rms.jpg" %>" alt="Picture of Richard Stallman" />
               </aside>
 
               <div class="span7 tabbable main-page-content">
@@ -37,6 +40,7 @@
                   <li><a href="#bio" data-toggle="tab">Bio</a></li>
                   <li><a href="#lecture" data-toggle="tab">Lecture</a></li>
                   <li class="<%= @registration_in_progress ? "active" : "" %>"><a href="#registration" data-toggle="tab">Register!</a></li>
+                  <li><a href="#stream" data-toggle="tab">Stream</a></li>
                 </ul>
                 </nav>
 
@@ -89,6 +93,14 @@
                     <h2> Registration (optional) </h2>
                     <%= yield %>
                   </div>
+
+                  <div id="stream" class="tab-pane">
+                    <a name="stream"></a>
+                    <h2> Here be streams</h2>
+                    <p>
+                      Lorem ipsum.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -98,22 +110,21 @@
     </div>
 
 
-        <div id="footer">
-          <div class="row">
-            <div class="span10 offset2 footer-content">
-              <span> Organized by </span>
-              <a href="http://pw.edu.pl"><img alt="Warsaw University of Technology" src="<%= image_path "pw.png" %>" /></a>
-              <a href="http://www.isoc.org.pl/"><img alt="Internet Society Poland" src="<%= image_path "isoc.png" %>" /></a>
-              <a href="http://www.ee.pw.edu.pl"><img alt="WUT Department of EE" src="<%= image_path "ee.jpg" %>" /></a>
-              <a href="http://kotik.iem.pw.edu.pl/"><img alt="KOTIK" src="<%= image_path "kotik.png" %>" /></a>
-              <a href="http://radioaktywne.pl"><img alt="radioaktywne.pl" src="<%= image_path "radioaktywne.pl.png" %>" /></a>
-              <a href="http://polibuda.info"><img alt="polibuda.info" src="<%= image_path "polibuda.info.png"%>" /></a>
-            </div>
-          </div>
+    <div id="footer">
+      <div class="row">
+        <div class="span10 offset2 footer-content">
+          <span> Organized by </span>
+          <a href="http://pw.edu.pl"><img alt="Warsaw University of Technology" src="<%= image_path "pw.png" %>" /></a>
+          <a href="http://www.isoc.org.pl/"><img alt="Internet Society Poland" src="<%= image_path "isoc.png" %>" /></a>
+          <a href="http://www.ee.pw.edu.pl"><img alt="WUT Department of EE" src="<%= image_path "ee.jpg" %>" /></a>
+          <a href="http://kotik.iem.pw.edu.pl/"><img alt="KOTIK" src="<%= image_path "kotik.png" %>" /></a>
+          <a href="http://radioaktywne.pl"><img alt="radioaktywne.pl" src="<%= image_path "radioaktywne.pl.png" %>" /></a>
+          <a href="http://polibuda.info"><img alt="polibuda.info" src="<%= image_path "polibuda.info.png"%>" /></a>
         </div>
-
       </div>
+    </div>
 
 
-    </body>
-  </html>
+
+  </body>
+</html>

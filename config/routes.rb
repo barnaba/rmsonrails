@@ -1,5 +1,5 @@
 Rmsonrails::Application.routes.draw do
-  resources :attendees
+  resources :attendees, only: ['create', 'new']
 
   root to: 'attendees#new'
 
