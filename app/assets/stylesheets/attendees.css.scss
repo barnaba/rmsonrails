@@ -1,0 +1,123 @@
+// Place all the styles related to the Attendees controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, #wrap{ height: 100%; }
+body > #wrap{ height: auto; min-height: 100%; }
+
+#recaptcha_widget_div {
+  margin-left: 40px;
+  display: inline-block;
+}
+
+#error_explanation {
+  color: red;
+}
+
+body {
+  height: 100%; 
+  background-color: #7F8E95
+}
+
+/*header*/
+
+#header {
+  margin-bottom: 30px;
+}
+
+#header h1 {
+  text-align: right;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  color: black;
+}
+
+
+/*navigation */
+
+nav .nav-tabs {
+  border-bottom: 1px solid #995F1F;
+}
+
+nav .nav-tabs > li {
+  margin-bottom: -2px;
+}
+
+nav .nav-tabs > li > a {
+  border-radius: 0px;
+  font-weight: bold;
+  color: black;
+  margin-right: 0px;
+  font-size: 130%;
+}
+
+nav .nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+  border-width: 0px;
+  background-color: #995F1F;
+  color: #F2F3D8;
+}
+
+/*content*/
+
+.main-page-content {
+ width: 730px !important;
+ background-color: #E2C454;
+ min-height: 375px;
+ padding-bottom: 30px;
+ box-shadow: 2px 3px 3px #666666;
+}
+
+.form-horizontal .controls {
+  margin-left: 40px;
+}
+
+div#content aside {
+  margin: 0px;
+  box-shadow: 2px 3px 3px #666666;
+}
+
+
+div#content .main-page-content {
+  margin-left: 0px;
+}
+
+div#content .main-page-content .tab-content {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+/*footer*/
+
+#footer span {
+    background: none repeat scroll 0 0 #995F1F;
+    border-radius: 4px 4px 4px 4px;
+    color: white;
+    display: block;
+    font-family: 'Montserrat Subrayada',sans-serif;
+    left: 50%;
+    margin-left: -5em;
+    position: absolute;
+    text-align: center;
+    top: -1ex;
+    width: 10em;
+}
+
+#footer .footer-content {
+  clear: both;
+  background-color: #E2C454;
+  position: relative;
+  z-index: 10;
+  height: 100px;
+  margin-top: -100px;
+  margin-left: 200px;
+  width: 1000px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 2px 3px 3px #666666;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#footer .footer-content img {
+  margin: 10px;
+}
+

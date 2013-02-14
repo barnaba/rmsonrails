@@ -2,4 +2,7 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  helpers:
+    label:
+      attendee:
+        kotik_mailing:  "I would like to receive informations about similar events organized at Warsaw University of Technology"

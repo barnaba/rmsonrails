@@ -1,0 +1,38 @@
+<%= form_for(@attendee, {html: {class: "form-horizontal"}}) do |f| %>
+  <% if @attendee.errors.any? %>
+    <div id="error_explanation">
+      <h2>There were <%= pluralize(@attendee.errors.count, "error") %> with your submission:</h2>
+
+      <ul>
+      <% @attendee.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :name, class: "control-label" %>
+    <%= f.text_field :name, class: "controls" %>
+  </div>
+  <div class="control-group">
+    <%= f.label :Surname, class: "control-label"%>
+    <%= f.text_field :Surname, class: "controls" %>
+  </div>
+  <div class="control-group">
+    <%= f.label :Email, class: "control-label" %>
+    <%= f.text_field :Email, class: "controls" %>
+  </div>
+  <div class="control-group">
+    <%= f.label :kotik_mailing, class: "control-label" %>
+    <%= f.check_box :kotik_mailing, class: "controls" %>
+  </div>
+  <div class="control-group">
+    <label class="control-label">Enter text from image:</label>
+    <%= recaptcha_tags(display: {theme: 'clean'}) %>
+  </div>
+  <div class="control-group">
+    <label class="control-label"></label>
+    <input class="btn btn-success controls" type='submit' value='Register' class="controls">
+  </div>
+<% end %>
