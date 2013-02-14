@@ -37,11 +37,10 @@ class AttendeesController < ApplicationController
 
     respond_to do |format|
       if verify_recaptcha(model: @attendee) && @attendee.save
-        format.html { redirect_to root_path, notice: 'Your registration was succesful. Thank you.' }
+        format.html { redirect_to root_path, notice: t('notice.registration.success')}
         format.json { render json: @attendee, status: :created, location: @attendee }
       else
         @registration_in_progress = @attendee.errors.keys.any?
-        Rails.logger.debug @attendee.errors.inspect
         format.html { render action: "new" }
         format.json { render json: @attendee.errors, status: :unprocessable_entity }
       end

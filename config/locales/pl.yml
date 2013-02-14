@@ -1,0 +1,31 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+pl:
+  helpers:
+    label:
+      attendee:
+        kotik_mailing:  "Chcę otrzymywać informacje o podobnych wydarzeniach organizowanych przez Politechnikę Warszawską"
+        name: "Imię"
+        Surname: "Nazwisko"
+        captcha: "Tekst z obrazka"
+  layout:
+    organized_by: "Oganizatorzy"
+  activerecord:
+    attributes:
+      attendee:
+        Surename: "Nazwisko"
+    errors:
+      models:
+        attendee:
+          attributes:
+            Surname:
+              blank: "Pole 'Imię' nie może być puste."
+            name:
+              blank: "Pole 'Nazwisko' nie może być puste."
+            Email:
+              invalid: "Podany adres email jest nieprawidłowy."
+              taken:   "Podany adres email jest już zarejestrowany. Skontaktuj się z osobą odpowiedzialną za rejestrację: michal@zapu.net"
+  notice:
+    registration:
+      success: "Rejestracja zakończona sukcesem"
