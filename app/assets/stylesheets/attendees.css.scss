@@ -11,7 +11,11 @@ html { height: 100%; }
 }
 
 #error_explanation {
-  color: red;
+  color: #BB0000;
+}
+
+.field_with_errors > input{
+  border: 2px solid #BB0000;
 }
 
 body {
@@ -124,6 +128,7 @@ div#content .main-page-content .tab-content {
   border-radius: 10px 10px 0 0;
   box-shadow: 2px 3px 3px #666666;
   text-align: center;
+  position: relative;
 }
 
 #footer .footer-content img {
