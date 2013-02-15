@@ -17,7 +17,7 @@
         <div class="row">
           <div class="span10 offset2">
             <h1> Richard Stallman <br />
-              Free Software and Your Freedom</h1>
+              Wizyta w Warszawie 13 marca 2013</h1>
           </div>
         </div>
       </div>
@@ -36,16 +36,16 @@
               <div class="span7 tabbable main-page-content">
                 <nav>
                 <ul class="nav nav-tabs">
-                  <li class="<%= @registration_in_progress ? "" : "active" %>"><a href="#main" data-toggle="tab">Program</a></li>
-                  <li><a href="#bio" data-toggle="tab">O gościu</a></li>
-                  <li><a href="#lecture" data-toggle="tab">Wykład</a></li>
-                  <li class="<%= @registration_in_progress ? "active" : "" %>"><a href="#registration" data-toggle="tab">Rejestracja</a></li>
-                  <li><a href="#stream" data-toggle="tab">Stream</a></li>
+                  <li><a href="#main">Program</a></li>
+                  <li><a href="#bio" >O gościu</a></li>
+                  <li><a href="#lecture">Wykład</a></li>
+                  <li ><a href="#registration">Rejestracja</a></li>
+                  <li><a href="#stream">Stream</a></li>
                 </ul>
                 </nav>
 
                 <div class="tab-content">
-                  <div id="main" class="tab-pane<%= @registration_in_progress ? "" : " active" %>">
+                  <div id="main">
                     <a name="main"></a>
                     <h2> Program wizyty </h2>
                     <p>
@@ -56,7 +56,7 @@
                     </p>
                   </div>
 
-                  <div id="bio" class="tab-pane">
+                  <div id="bio">
                     <a name="bio"></a>
                     <h2> Sylwetka gościa</h2>
                     <p>
@@ -67,7 +67,7 @@
                     </p>
                   </div>
 
-                  <div id="lecture" class="tab-pane">
+                  <div id="lecture">
                     <a name="lecture"></a>
                     <h2> Szczegółowe informacje o wykładzie</h2>
                       <p> Wykład odbędzie się <b>12 marca 2013 o godzinie 12:00</b> w Małej Auli Gmachu Głównego Politechniki Warszawskiej </p>
@@ -79,7 +79,7 @@
                     </p>
                   </div>
 
-                  <div id="registration" class="tab-pane<%= @registration_in_progress ? " active" : "" %>">
+                  <div id="registration">
                     <a name="registration"></a>
                     <h2> Rejestracja (opcjonalna) </h2>
                     <p> Rejestracja <b>nie</b> jest obowiązkowa, ale osoby zarejestrowane będą miały <b>pierwszeństwo</b> w wypadku braku miejsc na sali (miejsca na około 300 osób). </p>
@@ -89,7 +89,7 @@
                     <%= yield %>
                   </div>
 
-                  <div id="stream" class="tab-pane">
+                  <div id="stream">
                     <a name="stream"></a>
                     <h2> Oglądaj na żywo </h2>
                     <p>
