@@ -84,6 +84,15 @@ pl:
   notice:
     registration:
       success: "Rejestracja zakończona sukcesem"
+      resignation_success_html:  "<h1> Twoja rejestracja na wykład została odwołana </h1>
+  <p> Możesz przyjść mimo to. O ile starczy miejsca dla niezarejestrowanych </p>
+  <p> Zachowaliśmy Twój adres e-mail i preferencje dotyczące informacji o wydarzeniach organizowanych przez PW. Jeśli chcesz je usunąć skontaktuj się z administratorem: michal@zapu.net </p>
+      "
+      resignation_fail_html: "
+  <h1> Błąd, rejestracja nie mogła zostać odwołana </h1>
+  <p> Skontaktuj się z administratorem: michal@zapu.net </p>
+      "
+
 
   attendees:
     error_explanation: "Wystąpiły następujące błędy:"

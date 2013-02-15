@@ -1,5 +1,10 @@
 Rmsonrails::Application.routes.draw do
-  resources :attendees, only: ['create', 'new']
+  resources :attendees, only: ['create', 'new', 'resign'] do
+    member do
+      get 'resign/:token', :action => 'resign', as: 'resign'
+    end
+  end
+  
 
   root to: 'attendees#new'
 

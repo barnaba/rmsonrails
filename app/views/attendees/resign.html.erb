@@ -1,0 +1,5 @@
+<% if @attendee.has_resigned? %>
+  <%= t('notice.registration.resignation_success_html') %>
+<% else %>
+  <%= t('notice.registration.resignation_fail_html') %>
+<% end %>

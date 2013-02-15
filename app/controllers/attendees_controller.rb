@@ -47,9 +47,17 @@ class AttendeesController < ApplicationController
     end
   end
 
+  def resign
+    @attendee = Attendee.find(params[:id])
+    token = params[:token]
+    if @attendee.token_valid? token
+      @attendee.resign
+    end
+  end
+
   private
 
   def registration_enabled
-    @registration_enabled = Date.today() >= Date.parse("01/03/2013")
+    @registration_enabled = Date.today() >= Date.parse("01/03/2013") || Rails.env == "development"
   end
 end

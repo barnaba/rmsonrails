@@ -11,15 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130214025544) do
+ActiveRecord::Schema.define(:version => 20130215133946) do
 
   create_table "attendees", :force => true do |t|
     t.string   "name"
     t.string   "Surname"
     t.string   "Email"
     t.boolean  "kotik_mailing"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
+    t.string   "resignation_token"
+    t.boolean  "resigned",          :default => false
   end
 
 end

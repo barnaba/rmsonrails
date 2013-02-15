@@ -35,46 +35,17 @@
               <div class="span7 tabbable main-page-content">
                 <nav>
                 <ul class="nav nav-tabs">
-                  <li><a href="#lecture"><%= t('layout.tabs.lecture')%></a></li>
-                  <li><a href="#bio" ><%= t('layout.tabs.bio') %></a></li>
-                  <li ><a href="#registration"><%= t('layout.tabs.registration') %></a></li>
-                  <li><a href="#stream"><%= t('layout.tabs.stream') %></a></li>
-                  <li><a href="#main"><%= t('layout.tabs.main') %></a></li>
-                  <li><a href="#media"><%= t('layout.tabs.media') %></a></li>
+                  <li><%= link_to t('layout.tabs.lecture'), root_path + "#lecture"%></li>
+                  <li><%= link_to t('layout.tabs.bio'), root_path + "#bio" %></li>
+                  <li><%= link_to t('layout.tabs.registration'), root_path + "#registration"%></li>
+                  <li><%= link_to t('layout.tabs.stream'), root_path + "#stream"%></li>
+                  <li><%= link_to t('layout.tabs.main'), root_path + "#main"%></li>
+                  <li><%= link_to t('layout.tabs.media'), root_path + "#media"%></li>
                 </ul>
                 </nav>
 
                 <div class="tab-content">
-                  <div id="lecture">
-                    <a name="lecture"></a>
-                    <%= t('content.lecture_html') %>
-                  </div>
-
-                  <div id="bio">
-                    <a name="bio"></a>
-                    <%= t('content.bio_html') %>
-                  </div>
-
-                  <div id="registration">
-                    <a name="registration"></a>
-                    <%= t('content.registration_html') %>
-                    <%= yield %>
-                  </div>
-
-                  <div id="stream">
-                    <a name="stream"></a>
-                    <%= t('content.stream_html') %>
-                  </div>
-
-                  <div id="main">
-                    <a name="main"></a>
-                    <%= t('content.main_html') %>
-                  </div>
-
-                  <div id="media">
-                    <a name="media"></a>
-                    <%= t('content.media_info_html') %>
-                  </div>
+                  <%= yield %>
                 </div>
               </div>
             </div>
