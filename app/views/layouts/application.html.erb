@@ -35,28 +35,24 @@
               <div class="span7 tabbable main-page-content">
                 <nav>
                 <ul class="nav nav-tabs">
-                  <li><a href="#main"><%= t('layout.tabs.main') %></a></li>
-                  <li><a href="#bio" ><%= t('layout.tabs.bio') %></a></li>
                   <li><a href="#lecture"><%= t('layout.tabs.lecture')%></a></li>
+                  <li><a href="#bio" ><%= t('layout.tabs.bio') %></a></li>
                   <li ><a href="#registration"><%= t('layout.tabs.registration') %></a></li>
                   <li><a href="#stream"><%= t('layout.tabs.stream') %></a></li>
+                  <li><a href="#main"><%= t('layout.tabs.main') %></a></li>
+                  <li><a href="#media"><%= t('layout.tabs.media') %></a></li>
                 </ul>
                 </nav>
 
                 <div class="tab-content">
-                  <div id="main">
-                    <a name="main"></a>
-                    <%= t('content.main_html') %>
+                  <div id="lecture">
+                    <a name="lecture"></a>
+                    <%= t('content.lecture_html') %>
                   </div>
 
                   <div id="bio">
                     <a name="bio"></a>
                     <%= t('content.bio_html') %>
-                  </div>
-
-                  <div id="lecture">
-                    <a name="lecture"></a>
-                    <%= t('content.lecture_html') %>
                   </div>
 
                   <div id="registration">
@@ -68,6 +64,16 @@
                   <div id="stream">
                     <a name="stream"></a>
                     <%= t('content.stream_html') %>
+                  </div>
+
+                  <div id="main">
+                    <a name="main"></a>
+                    <%= t('content.main_html') %>
+                  </div>
+
+                  <div id="media">
+                    <a name="media"></a>
+                    <%= t('content.media_info_html') %>
                   </div>
                 </div>
               </div>

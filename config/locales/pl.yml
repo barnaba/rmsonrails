@@ -14,6 +14,7 @@ pl:
       lecture: "wykład"
       registration: "Rejestracja"
       stream: "Stream"
+      media: "Dla mediów"
 
   content:
     main_html: "<h2> Program wizyty </h2>
@@ -53,6 +54,7 @@ pl:
                       Planujemy umożliwić oglądanie zarówno wykładu jak i spotkania dyskusyjnego na żywo. Więcej informacji wkrótce.
                     </p>
                     "
+    media_info_html: "<h2> Nic tu nie ma </h2> <p> Wkrótce się coś pojawi </p> "
 
 
   helpers:
