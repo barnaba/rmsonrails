@@ -8,6 +8,7 @@ gem 'rails', '3.2.11'
 gem "jquery-rails"
 gem "recaptcha", :require => "recaptcha/rails"
 gem 'pg'
+gem 'copycopter_client', '~> 2.0.1'
 
 
 # Gems used only for assets and not required
