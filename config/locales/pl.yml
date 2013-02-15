@@ -5,6 +5,55 @@ pl:
   layout:
     organized_by: "Oganizatorzy"
     media_partners: "Patroni medialni"
+    title: "Richard Stallman - Warszawa, 13 Marca 2013"
+    header_html: "Richard Stallman <br /> Wizyta w Warszawie 13 marca 2013"
+    picture_alt: "Richard Stallman"
+    tabs:
+      main: "Program"
+      bio: "O gościu"
+      lecture: "wykład"
+      registration: "Rejestracja"
+      stream: "Stream"
+
+  content:
+    main_html: "<h2> Program wizyty </h2>
+                    <p>
+                      12 marca 2013 do Polski przyleci Richard Stallman. Celem jego wizyty jest Studencki Festiwal Informatyczny, który odbywa się w dniach 14-16 marca na krakowskiej Akademii Górniczo-Hutniczej[a]. Dzień wcześniej, 13 marca odbędzie się cykl spotkań ze Stallmanem w Warszawie.
+                      <p>
+                        Głównym z nich jest wykład, który odbędzie się o godz. 12 na Politechnice Warszawskiej. Tego dnia Stallman odwiedzi również Fundację Nowoczesna Polska, Centrum Cyfrowe (godz. 18) oraz Warszawski Hackerspace (godz. 21).
+                      </p>
+                    </p>"
+    bio_html: "<h2> Sylwetka gościa</h2>
+                    <p>
+                      Dr Richard Stallman zapoczątkował ruch wolnego oprogramowania w roku 1983 i rozpoczął rozwijanie systemu operacyjnego GNU (www.gnu.org) w roku 1984. GNU jest wolnym oprogramowaniem: każdemu wolno je kopiować i rozpowszechniać zarówno ze zmianami jak i bez. System GNU/Linux, czyli system operacyjny GNU z dodanym Linuksem jest dziś używany na dziesiątkach milionów komputerów. 
+                    </p>
+                    <p>
+                      Stallman otrzymał nagrodę ACM imienia Grace Hopper, stypendium Fundacji MacArthur, Nagrodę Pioniera od Electronic Frontier Foundation, Nagrodę Takeda za „Ulepszenia Społeczno-Ekonomiczne”, a także kilka honorowych doktoratów.
+                    </p>"
+    lecture_html: "
+                    <h2> Szczegółowe informacje o wykładzie</h2>
+                      <p> Wykład odbędzie się <b>12 marca 2013 o godzinie 12:00</b> w Małej Auli Gmachu Głównego Politechniki Warszawskiej </p>
+                    <p>
+                      Tytuł wykładu to „Wolne społeczeństwo cyfrowe” (oryg. „A free digital society”). Wiele w Polsce mówi się o tak zwanym „cyfrowym wykluczeniu” jako przeciwieństwie partycypacji w osiągnięciach najnowszej techniki, w szczególności komputerowej. Traktuje się przy tym cyfrowe wykluczenie bezwzględnie jako zło, które należy likwidować, a to z kolei oznacza automatyczne wprowadzenie w to miejsce czegoś dobrego. Stallman oferuje głębszą refleksję nad pytaniem o dobre i złe strony cyfrowego uczestnictwa w kulturze.
+                    </p>
+                    <p>
+                      Według Stallmana: „Działania zmierzające do włączenia większej liczby osób w używanie cyfrowych technologii oparte są na założeniu, że niewątpliwie taka partycypacja jest rzeczą bez wątpienia dobrą. Z praktycznego punktu widzenia to bardzo wygodna teza. Wydaje się tak, jesli bierzemy pod uwagę jedynie praktyczną wygodę. Jednakże, jeśli jednak spojrzymy na nią z perspektywydokonamy oceny również pod względem praw człowieka, takie cyfrowe włączenie może być zarówno dobre jak i złe – w zależności od tego, do jakiego rodzaju cyfrowego świata zostajemy włączeni. Jeśli naszym celem jest cyfrowa partycypacja, powinniśmy mieć pewność, że jest to rzecz dobra.”
+                    </p>
+                    "
+    registration_html: "
+                    <h2> Rejestracja (opcjonalna) </h2>
+                    <p> Rejestracja <b>nie</b> jest obowiązkowa, ale osoby zarejestrowane będą miały <b>pierwszeństwo</b> w wypadku braku miejsc na sali (miejsca na około 300 osób). </p>
+                    <p> Rejestracja dotyczy tylko głównego spotkania - wykładu Richarda Stallmana na Politechnice Warszawskiej </p>
+                    <p> Zbierane dane zostaną wykorzystane tylko przez obsługę spotkania. Możliwe że e-mail będzie potrzebny do potwierdzenia rejestracji na kilka dni przed spotkaniem. Może być także użyty do przesyłania informacji o ważnych zmianach w programie spotkania lub informacjach o podobnych wydarzeniach - jeśli się na to zgodzisz.</p>
+                    <p> <b>Rejestracja zostanie otwarta 1-go Marca 2013</b> </p>
+                    "
+    stream_html: "
+                    <h2> Oglądaj na żywo </h2>
+                    <p>
+                      Planujemy umożliwić oglądanie zarówno wykładu jak i spotkania dyskusyjnego na żywo. Więcej informacji wkrótce.
+                    </p>
+                    "
+
 
   helpers:
     label:
@@ -33,3 +82,7 @@ pl:
   notice:
     registration:
       success: "Rejestracja zakończona sukcesem"
+
+  attendees:
+    error_explanation: "Wystąpiły następujące błędy:"
+
