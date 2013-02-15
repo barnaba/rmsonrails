@@ -55,6 +55,15 @@ pl:
                     </p>
                     "
     media_info_html: "<h2> Nic tu nie ma </h2> <p> Wkrótce się coś pojawi </p> "
+    main_orgs_html: "<h3> Organizator główny </h3> <p> Lorem ipsum dolor sit amet… </p>"
+    secondary_orgs_html: "<h3> Współrganizatorzy </h3> <p> Lorem ipsum dolor sit amet… </p>"
+    supporting_media_html: "<h3> Partnerzy medialni</h3> <p> Lorem ipsum dolor sit amet… </p>"
+    orgs_title: "Organizatorzy"
+    orgs:
+      ee: "Wydział Elektyczny PW"
+      pw: "Politechnika Warszawska"
+      kotik: "Koło KOTIK"
+      isoc: "ISOC Polska"
 
 
   helpers:
