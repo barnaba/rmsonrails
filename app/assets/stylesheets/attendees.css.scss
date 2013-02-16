@@ -11,8 +11,16 @@ $decal-text-color: #F2F3D8;
 
 $footer-height: 218px;
 
-html { height: 100%; }
-#wrap{ position: relative; min-height: 100%; }
+.main-page-content {
+  background-color: $foreground-color;
+  padding-bottom: 30px;
+  box-shadow: 2px 3px 3px #666666;
+}
+
+#wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #recaptcha_widget_div {
   margin-left: 40px;
@@ -33,7 +41,6 @@ body {
 }
 
 #notice {
-  margin-left: -30px;
 }
 
 /*header*/
@@ -64,7 +71,6 @@ nav .nav-tabs > li > a {
   font-weight: bold;
   color: black;
   margin-right: 0px;
-  font-size: 130%;
 }
 
 nav .nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > li > a:hover {
@@ -75,13 +81,6 @@ nav .nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > li > a:h
 
 /*content*/
 
-.main-page-content {
- width: 730px !important;
- background-color: $foreground-color;
- min-height: 375px;
- padding-bottom: 30px;
- box-shadow: 2px 3px 3px #666666;
-}
 
 .form-horizontal .controls {
   margin-left: 40px;
@@ -91,95 +90,15 @@ form {
   margin: 20px 0;
 }
 
-div#content aside {
-  margin: 0px;
-  box-shadow: 2px 3px 3px #666666;
-}
 
-
-div#content .main-page-content {
-  margin-left: 0px;
-}
 
 div#content .main-page-content .tab-content {
   margin-left: 30px;
   margin-right: 30px;
 }
 
-#content > .row {
-  padding-bottom: 50px;
-}
 
-
-/*footer*/
-#footer {
-  position: absolute;
-  bottom: 0;
-  height: 218px;
-}
-
-#footer .footer-content {
-  clear: both;
-  height: 218px;
-  background-color: $foreground-color;
-  z-index: 10;
-  margin-left: 200px;
-  width: 1000px;
-  border-radius: 10px 10px 0 0;
-  box-shadow: 2px 3px 3px #666666;
-  text-align: center;
-  position: relative;
-
-  > div {
-    position: relative;
-    width: 50%;
-    float:left;
-    padding-top: 2ex;
-    min-height: 100px;
-
-    > a {
-      line-height:100px;
-    }
-
-    > span {
-      background: none repeat scroll 0 0 $decal-color;
-      border-radius: 4px 4px 4px 4px;
-      color: $decal-text-color;
-      display: block;
-      font-family: 'Montserrat Subrayada',sans-serif;
-      left: 50%;
-      position: absolute;
-      top: -1ex;
-    }
-
-  }
-
-  > .organizers > span {
-    width: 10em;
-    margin-left: -5em;
-  }
-  > .media-partners > span {
-    width: 12em;
-    margin-left: -6em;
-  }
-
-}
-
-#footer .footer-content:after {
-  margin: 40px 0;
-  content: "";
-  width:50%;
-  border-right: 2px dashed $background-color;
-  position: absolute;
-  height: 138px;
-  left: 0;
-  top: 0;
-}
-
-#footer .footer-content img {
-  margin: 10px;
-}
-
+/*ORGs*/
 
 ul.org {
   list-style: none outside none;
@@ -193,7 +112,7 @@ ul.org {
     margin-right: 20px;
     margin-bottom: 30px;
     display: block;
-    
+
     > a {
       display: block;
       margin-bottom: 10px;
@@ -212,7 +131,7 @@ ul.org {
       margin-left: auto;
       margin-right: auto;
       float:right;
-      }
+    }
 
     > span.short {
       float:none;
@@ -224,4 +143,42 @@ ul.org {
 #organizers > * {
   clear: both;
 }
+@media only screen and (min-width: 1000px), only screen and (min-device-width: 1000px) {
+  #wrap{ 
+    margin-left: 50px;
+    margin-right: auto;
+    width: 1000px;
+  }
+  aside {
+    margin: 0px;
+    width: 270px;
+    height: 405px;
+    background-image: url(image_path("rms.jpg"));
+    float: left;
+    box-shadow: 2px 3px 3px #666666;
+  }
+  div#content {
+    float: right;
+  }
+  .main-page-content {
+    width: 730px;
+    background-color: $foreground-color;
+    min-height: 375px;
+    padding-bottom: 30px;
+    box-shadow: 2px 3px 3px #666666;
+    margin-bottom: 80px;
+  }
 
+  nav .nav-tabs > li > a {
+    border-radius: 0px;
+    font-weight: bold;
+    color: black;
+    margin-right: 0px;
+    font-size: 130%;
+  }
+
+  nav .nav-tabs {
+    border-bottom: 1px solid $decal-color;
+    display:block;
+  }
+}
