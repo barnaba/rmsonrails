@@ -85,7 +85,6 @@ GEM
     rake (10.0.3)
     rdoc (3.12.1)
       json (~> 1.4)
-    recaptcha (0.3.4)
     rspec (2.9.0)
       rspec-core (~> 2.9.0)
       rspec-expectations (~> 2.9.0)
@@ -130,7 +129,6 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (= 3.2.11)
-  recaptcha
   rspec-rails (~> 2.0)
   sass-rails (~> 3.2.3)
   therubyracer

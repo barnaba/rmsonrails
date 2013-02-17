@@ -36,7 +36,7 @@ class AttendeesController < ApplicationController
     @attendee.valid?
 
     respond_to do |format|
-      if verify_recaptcha(model: @attendee) && @attendee.save
+      if @attendee.save
         format.html { redirect_to root_path, notice: t('notice.registration.success')}
         format.json { render json: @attendee, status: :created, location: @attendee }
       else

@@ -6,7 +6,6 @@ gem 'rails', '3.2.11'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem "jquery-rails"
-gem "recaptcha", :require => "recaptcha/rails"
 gem 'pg'
 gem 'copycopter_client', '~> 2.0.1'
 
