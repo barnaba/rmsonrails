@@ -24,10 +24,10 @@
         <div class="main-page-content">
           <nav>
           <ul class="nav nav-tabs">
-            <li><%= link_to t('layout.tabs.info'), root_path %></li>
-            <li><%= link_to t('layout.tabs.registration'), new_attendee_path %></li>
-            <li><%= link_to t('layout.tabs.stream'), streams_pages_path %></li>
-            <li><%= link_to t('layout.tabs.media'), media_pages_path %></li>
+            <li <%=active_if('pages#info')%>><%= link_to t('layout.tabs.info'), root_path%></li>
+            <li <%=active_if('attendees#new')%>><%= link_to t('layout.tabs.registration'), new_attendee_path%></li>
+            <li <%=active_if('pages#streams')%>><%= link_to t('layout.tabs.stream'), streams_pages_path%></li>
+            <li <%=active_if('pages#media')%>><%= link_to t('layout.tabs.media'), media_pages_path%></li>
           </ul>
           </nav>
 
