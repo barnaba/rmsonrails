@@ -70,8 +70,7 @@ pl:
     label:
       attendee:
         kotik_mailing:  "Chcę otrzymywać informacje o podobnych wydarzeniach organizowanych przez Politechnikę Warszawską"
-        name: "Imię"
-        Surname: "Nazwisko"
+        name: "Imię i Naziwsko (opcjonalne)"
         captcha: "Tekst z obrazka"
 
   activerecord:

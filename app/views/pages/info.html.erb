@@ -1,0 +1,46 @@
+<div id="lecture">
+  <a name="lecture"></a>
+  <%= t('content.lecture_html') %>
+</div>
+
+<div id="bio">
+  <a name="bio"></a>
+  <%= t('content.bio_html') %>
+</div>
+
+<div id="main">
+  <a name="main"></a>
+  <%= t('content.main_html') %>
+</div>
+
+<div id="organizers">
+  <a name="organizers"></a>
+  <h2> <%= t('content.orgs_title') %> </h2>
+  <%= t('content.main_orgs_html') %>
+  <ul class="org">
+    <li>
+      <a href="http://pw.edu.pl"><img alt="Warsaw University of Technology" src="<%= image_path "pw.png" %>" /></a><span><%= t('content.orgs.pw') %></span>
+    </li>
+    <li>
+      <a href="http://www.ee.pw.edu.pl"><img alt="WUT Department of EE" src="<%= image_path "ee.png" %>" /></a><span><%= t('content.orgs.ee') %></span>
+    </li>
+    <li>
+      <a href="http://kotik.iem.pw.edu.pl/"><img alt="KOTIK" src="<%= image_path "kotik.png" %>" /></a> <span><%= t('content.orgs.kotik') %></span>
+    </li>
+  </ul>
+  <%= t('content.secondary_orgs_html') %>
+  <ul class="org">
+    <li>
+      <a href="http://www.isoc.org.pl/"><img alt="Internet Society Poland" src="<%= image_path "isoc.png" %>" /></a><span class="short"><%= t('content.orgs.isoc') %></span>
+    </li>
+  </ul>
+  <%= t('content.supporting_media_html') %>
+  <ul class="org">
+    <li>
+      <a href="http://radioaktywne.pl"><img alt="radioaktywne.pl" src="<%= image_path "radioaktywne.pl.png" %>" /></a>
+    </li>
+    <li>
+      <a href="http://polibuda.info"><img alt="polibuda.info" src="<%= image_path "polibuda.info.png"%>" /></a>
+    </li>
+  </ul>
+</div>

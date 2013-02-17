@@ -4,9 +4,16 @@ Rmsonrails::Application.routes.draw do
       get 'resign/:token', :action => 'resign', as: 'resign'
     end
   end
-  
 
-  root to: 'attendees#new'
+  resources :pages, only:['streams', 'info', 'media'] do
+    collection do
+      get 'stream', :action => 'streams', as: 'streams'
+      get 'info', :action => 'info', as: 'info'
+      get 'media', :action => 'media', as: 'media'
+    end
+  end
+
+  root to: 'pages#info'
 
 
   # The priority is based upon order of creation:
