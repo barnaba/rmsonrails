@@ -8,6 +8,7 @@ pl:
     title: "Richard Stallman - Warszawa, 13 Marca 2013"
     header_html: "Richard Stallman <br /> Wizyta w Warszawie 13 marca 2013"
     picture_alt: "Richard Stallman"
+    attribution_html: 'Zdjęcie Richarda Stallmana użyte na stronie jest <a href="https://secure.flickr.com/photos/hko_s/7543575412/">udostępnione</a> na licencji Creative Commons Attribution 2.0 Generic przez autora: Heiko S.'
     tabs:
       main: "Program"
       bio: "O gościu"
@@ -55,9 +56,9 @@ pl:
                     </p>
                     "
     media_info_html: "<h2> Nic tu nie ma </h2> <p> Wkrótce się coś pojawi </p> "
-    main_orgs_html: "<h3> Organizator główny </h3> <p> Lorem ipsum dolor sit amet… </p>"
-    secondary_orgs_html: "<h3> Współrganizatorzy </h3> <p> Lorem ipsum dolor sit amet… </p>"
-    supporting_media_html: "<h3> Partnerzy medialni</h3> <p> Lorem ipsum dolor sit amet… </p>"
+    main_orgs_html: "<h3> Organizator główny </h3> <p> </p>"
+    secondary_orgs_html: "<h3> Współrganizatorzy </h3> <p> </p>"
+    supporting_media_html: "<h3> Partnerzy medialni</h3> <p> </p>"
     orgs_title: "Organizatorzy"
     orgs:
       ee: "Wydział Elektyczny PW"

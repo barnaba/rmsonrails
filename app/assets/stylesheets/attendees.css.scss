@@ -164,9 +164,20 @@ ul.org {
     width: 730px;
     background-color: $foreground-color;
     min-height: 375px;
-    padding-bottom: 30px;
     box-shadow: 2px 3px 3px #666666;
-    margin-bottom: 80px;
+    margin-bottom: 4px;
+  }
+
+  span.attribution {
+    width: 730px;
+    display:block;
+    text-align: justify;
+    font-size: 80%;
+    > a {
+      color: #333333;
+      text-decoration: underline;
+    }
+    margin-bottom: 20px;
   }
 
   nav .nav-tabs > li > a {
