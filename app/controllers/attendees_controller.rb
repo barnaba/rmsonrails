@@ -1,6 +1,5 @@
 class AttendeesController < ApplicationController
   before_filter :registration_enabled, :only => ['create', 'new']
-  caches_action :new, layout: false
   # GET /attendees
   # GET /attendees.json
   def index
