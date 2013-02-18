@@ -22,6 +22,10 @@ $footer-height: 218px;
   margin-right: auto;
 }
 
+span.attribution {
+  display:none;
+}
+
 #recaptcha_widget_div {
   margin-left: 40px;
   display: inline-block;
