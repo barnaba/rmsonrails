@@ -18,6 +18,7 @@ pl:
       media: "Dla mediów"
 
   content:
+    brama_does_streaming_html: 'Streaming zapewnia Laboratorium Technik Mobilnych <a href="http://brama.elka.pw.edu.pl">BRAMA</a>.'
     main_html: "<h2> Program wizyty </h2>
                     <p>
                       12 marca 2013 do Polski przyleci Richard Stallman. Celem jego wizyty jest Studencki Festiwal Informatyczny, który odbywa się w dniach 14-16 marca na krakowskiej Akademii Górniczo-Hutniczej[a]. Dzień wcześniej, 13 marca odbędzie się cykl spotkań ze Stallmanem w Warszawie.
@@ -57,7 +58,7 @@ pl:
                     "
     media_info_html: "<h2> Nic tu nie ma </h2> <p> Wkrótce się coś pojawi </p> "
     main_orgs_html: "<h3> Organizator główny </h3> <p> </p>"
-    secondary_orgs_html: "<h3> Współrganizatorzy </h3> <p> </p>"
+    secondary_orgs_html: "<h3> Współorganizatorzy </h3> <p> </p>"
     supporting_media_html: "<h3> Partnerzy medialni</h3> <p> </p>"
     orgs_title: "Organizatorzy"
     orgs:
