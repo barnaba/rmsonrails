@@ -58,6 +58,6 @@ class AttendeesController < ApplicationController
   private
 
   def registration_enabled
-    @registration_enabled = Date.today() >= Date.parse("02/03/2013") || Rails.env == "development"
+    @registration_enabled = Date.today() >= Date.parse("01/03/2013") || Rails.env == "development"
   end
 end
