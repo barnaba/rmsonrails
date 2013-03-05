@@ -9,4 +9,7 @@ class PagesController < ApplicationController
   def media
   end
 
+  def english
+  end
+
 end

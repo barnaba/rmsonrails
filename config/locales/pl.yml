@@ -16,8 +16,22 @@ pl:
       registration: "Rejestracja"
       stream: "Stream"
       media: "Dla mediów"
+      in_english: "In English"
 
   content:
+    in_english:
+      title: "Richard Stallman at Warsaw University of Technology"
+      content_html: "
+      <p>Richard Stallman famous computer programmer and software freedom activist will give a talk entitled \"A Free Digital Society\" at Warsaw University of Technology on March 13th 2013 (Wednesday) at 12:00.</p>
+
+      <p>Stallman, also known as \"rms\", is a leader of the free software movement. He is a creator of widely used gcc compiler, GNU tools library, and original author Emacs editor. Currently he is involved in campaigning against software patents, digital rights management, and copyright overuse. Popular GPL licence model is his contribution into world of public software development.</p>
+
+      <p>Talk will take place at the Main Building of Warsaw University of Technology (pl. Politechniki 1, Warsaw) at lecture hall \"Mala Aula\". It will start at 12pm, and least (with discussion) approx. 2 hours.</p>
+
+      <p>Registration is optional. But if you want to be sure to have place to seat, please fill %{link}.</p>
+
+      <p>In case of questions or any other problems don't hesitate to ask <a href=\"mailto:michal@zapu.net\"> michal@zapu.net</a> </p>"
+      registration_link: "registration form"
     brama_does_streaming_html: 'Streaming zapewnia Laboratorium Technik Mobilnych <a href="http://brama.elka.pw.edu.pl">BRAMA</a>.'
     main_html: "<h2> Program wizyty </h2>
                     <p>

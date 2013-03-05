@@ -7,11 +7,12 @@ Rmsonrails::Application.routes.draw do
 
   resources :stats, only: ['index']
 
-  resources :pages, only:['streams', 'info', 'media'] do
+  resources :pages, only:['streams', 'info', 'media', 'english'] do
     collection do
       get 'stream', :action => 'streams', as: 'streams'
       get 'info', :action => 'info', as: 'info'
       get 'media', :action => 'media', as: 'media'
+      get 'english', :action => 'english', as: 'english'
     end
   end
 
