@@ -1,5 +1,8 @@
 class StatsController < ApplicationController
   layout false
+
+  http_basic_authenticate_with :name => "kotik", :password => "elwisZyje"
+
   def index
     attendees = Attendee.all
     @stats = stats
