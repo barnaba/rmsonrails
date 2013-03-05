@@ -4,6 +4,8 @@ class Attendee < ActiveRecord::Base
   #todo nazwy kolumn małą literą
   attr_accessible :Email, :Surname, :kotik_mailing, :name
 
+  default_scope order('created_at ASC')
+
   validates_format_of :Email, with: /@/
   validates_uniqueness_of :Email
 
@@ -14,6 +16,14 @@ class Attendee < ActiveRecord::Base
       save
   end
 
+  def ord 
+    Attendee.where('created_at < ?', self.created_at).count
+  end
+
+  def mailing_ord 
+    Attendee.where('created_at < ? and kotik_mailing = true', self.created_at).count
+  end
+
   def token_valid?(token)
     token == self.resignation_token
   end
@@ -21,6 +31,17 @@ class Attendee < ActiveRecord::Base
   def has_resigned?
     self.resigned
   end
+
+class << self
+  def growing?
+    today = Attendee.where('created_at >= ?', Date.today.to_time).count
+    yesterday = Attendee.where('created_at >= ? and created_at < ?', Date.yesterday.to_time, Time.now - 1.day).count
+    [today > yesterday, (today * 1.0)/yesterday * 100]
+  end
+
+  def attendee_stats
+  end
+end
 
   protected
 

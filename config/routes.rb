@@ -5,6 +5,8 @@ Rmsonrails::Application.routes.draw do
     end
   end
 
+  resources :stats, only: ['index']
+
   resources :pages, only:['streams', 'info', 'media'] do
     collection do
       get 'stream', :action => 'streams', as: 'streams'
