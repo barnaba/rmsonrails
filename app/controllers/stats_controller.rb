@@ -1,7 +1,8 @@
+#encoding: utf-8
 class StatsController < ApplicationController
   layout false
 
-  http_basic_authenticate_with :name => "kotik", :password => "elwisZyje"
+  http_basic_authenticate_with :name => "kotik", :password => APP_CONFIG['basic_auth_pass']
 
   def index
     attendees = Attendee.all

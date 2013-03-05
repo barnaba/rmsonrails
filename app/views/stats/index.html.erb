@@ -1,9 +1,8 @@
 <!doctype html >
-<link type="text/css" rel="stylesheet" href="http://code.shutterstock.com/rickshaw/rickshaw.min.css">
 <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet" />
-<script src="http://code.shutterstock.com/rickshaw/vendor/d3.min.js"></script>
-<script src="http://code.shutterstock.com/rickshaw/vendor/d3.layout.min.js"></script>
-<script src="https://raw.github.com/shutterstock/rickshaw/master/rickshaw.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700' rel='stylesheet' type='text/css'>
+<%= stylesheet_link_tag    "stats", :media => "all" %>
+<%= javascript_include_tag   "stats"%>
 
 <style>
 #chart_container {
@@ -54,7 +53,7 @@ margin-top: 620px;
 <% if index == @date_stats.size - 1 %>
   <% growing = Attendee.growing? %>
   <span style="color:<%= (growing.first ? "green":"red") %>"><%= (growing.first ? "↑ " : "↓ ") %></span>
-  <%= "(#{growing.last.round}%)" %>
+  <%= growing.last %>
 <% end %>
 </td>
 </tr>

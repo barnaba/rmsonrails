@@ -1,3 +1,4 @@
+#encoding: utf-8
 #include Rails.application.routes.url_helpers
 
 class Attendee < ActiveRecord::Base
@@ -36,10 +37,11 @@ class << self
   def growing?
     today = Attendee.where('created_at >= ?', Date.today.to_time).count
     yesterday = Attendee.where('created_at >= ? and created_at < ?', Date.yesterday.to_time, Time.now - 1.day).count
-    [today > yesterday, (today * 1.0)/yesterday * 100]
-  end
-
-  def attendee_stats
+    begin
+      [today > yesterday, "#{((today * 1.0)/yesterday * 100).round}%"]
+    rescue 
+      [today > yesterday, "∞"]
+    end
   end
 end
 

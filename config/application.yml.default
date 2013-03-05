@@ -1,0 +1,10 @@
+defaults: &defaults
+  copycopter_key: ''
+  basic_auth_pass: ''
+
+development:
+  <<: *defaults
+test:
+  <<: *defaults
+production:
+  <<: *defaults
