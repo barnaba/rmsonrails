@@ -3,12 +3,12 @@
 
 class Attendee < ActiveRecord::Base
   #todo nazwy kolumn małą literą
-  attr_accessible :Email, :Surname, :kotik_mailing, :name
+  attr_accessible :email, :surname, :kotik_mailing, :name
 
   default_scope order('created_at ASC')
 
-  validates_format_of :Email, with: /@/
-  validates_uniqueness_of :Email
+  validates_format_of :email, with: /@/
+  validates_uniqueness_of :email
 
   after_create :generate_resignation_token
 

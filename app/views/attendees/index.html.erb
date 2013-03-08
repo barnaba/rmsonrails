@@ -14,8 +14,8 @@
 <% @attendees.each do |attendee| %>
   <tr>
     <td><%= attendee.name %></td>
-    <td><%= attendee.Surname %></td>
-    <td><%= attendee.Email %></td>
+    <td><%= attendee.surname %></td>
+    <td><%= attendee.email %></td>
     <td><%= attendee.kotik_mailing %></td>
     <td><%= link_to 'Show', attendee %></td>
     <td><%= link_to 'Edit', edit_attendee_path(attendee) %></td>
