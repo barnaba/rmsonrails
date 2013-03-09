@@ -111,11 +111,11 @@ pl:
       models:
         attendee:
           attributes:
-            Surname:
+            surname:
               blank: "Pole 'Imię' nie może być puste."
             name:
               blank: "Pole 'Nazwisko' nie może być puste."
-            Email:
+            email:
               invalid: "Podany adres email jest nieprawidłowy."
               taken:   "Podany adres email jest już zarejestrowany. Skontaktuj się z osobą odpowiedzialną za rejestrację: michal@zapu.net"
 
