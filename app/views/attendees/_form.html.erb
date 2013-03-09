@@ -12,6 +12,7 @@
       </div>
     <% end %>
 
+    <%= f.hidden_field :registration_type, value: @attendee.registration_type %>
     <div class="control-group">
       <%= f.label :name, class: "control-label" %>
       <%= f.text_field :name, class: "controls" %>

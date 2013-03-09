@@ -1,5 +1,7 @@
 <div id="registration">
   <a name="registration"></a>
-  <%= t('content.registration_html') %>
-  <%= render 'form' %>
+  <%= t("content.registration_#{Attendee.registration_type}_html") %>
+  <% if Attendee.registration_available? %>
+    <%= render 'form' %>
+  <% end %>
 </div>

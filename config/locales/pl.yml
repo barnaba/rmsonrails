@@ -57,13 +57,27 @@ pl:
                       Według Stallmana: „Działania zmierzające do włączenia większej liczby osób w używanie cyfrowych technologii oparte są na założeniu, że niewątpliwie taka partycypacja jest rzeczą bez wątpienia dobrą. Z praktycznego punktu widzenia to bardzo wygodna teza. Wydaje się tak, jesli bierzemy pod uwagę jedynie praktyczną wygodę. Jednakże, jeśli jednak spojrzymy na nią z perspektywydokonamy oceny również pod względem praw człowieka, takie cyfrowe włączenie może być zarówno dobre jak i złe – w zależności od tego, do jakiego rodzaju cyfrowego świata zostajemy włączeni. Jeśli naszym celem jest cyfrowa partycypacja, powinniśmy mieć pewność, że jest to rzecz dobra.”
                     </p>
                     "
-    registration_html: "
-                    <h2> Rejestracja (opcjonalna) </h2>
-                    <p> Rejestracja <b>nie</b> jest obowiązkowa, ale osoby zarejestrowane będą miały <b>pierwszeństwo</b> w wypadku braku miejsc na sali (miejsca na około 300 osób). </p>
-                    <p> Rejestracja dotyczy tylko głównego spotkania - wykładu Richarda Stallmana na Politechnice Warszawskiej </p>
-                    <p> Zbierane dane zostaną wykorzystane tylko przez obsługę spotkania. Możliwe że e-mail będzie potrzebny do potwierdzenia rejestracji na kilka dni przed spotkaniem. Może być także użyty do przesyłania informacji o ważnych zmianach w programie spotkania lub informacjach o podobnych wydarzeniach - jeśli się na to zgodzisz.</p>
-                    <p> <b>Rejestracja zostanie otwarta 1-go Marca 2013</b> </p>
-                    "
+    registration_seated_html: ' <h2> Rejestracja (opcjonalna) </h2> <p> Rejestracja <b>nie</b>
+      jest obowiązkowa, ale osoby zarejestrowane będą miały <b>pierwszeństwo</b> w
+      wypadku braku miejsc na sali (miejsca na około 300 osób). </p> <p> Rejestracja
+      dotyczy tylko głównego spotkania - wykładu Richarda Stallmana na Politechnice
+      Warszawskiej </p> <p> Zbierane dane zostaną wykorzystane tylko przez obsługę
+      spotkania. Możliwe że e-mail będzie potrzebny do potwierdzenia rejestracji na
+      kilka dni przed spotkaniem. Może być także użyty do przesyłania informacji o
+      ważnych zmianach w programie spotkania lub informacjach o podobnych wydarzeniach
+      - jeśli się na to zgodzisz.</p> <p>Możesz również się zarejestrować kontaktując
+      się bezpośrednio z nami: michal@zapu.net</p> '
+    registration_standing_html: ' <h2> Rejestracja (miejsca stojące) </h2> <p> Rejestracja <b>nie</b>
+      jest obowiązkowa, ale osoby zarejestrowane będą miały <b>pierwszeństwo</b> w
+      wypadku braku miejsc na sali (miejsca na około 300 osób). </p> <p> Rejestracja
+      dotyczy tylko głównego spotkania - wykładu Richarda Stallmana na Politechnice
+      Warszawskiej </p> <p> Zbierane dane zostaną wykorzystane tylko przez obsługę
+      spotkania. Możliwe że e-mail będzie potrzebny do potwierdzenia rejestracji na
+      kilka dni przed spotkaniem. Może być także użyty do przesyłania informacji o
+      ważnych zmianach w programie spotkania lub informacjach o podobnych wydarzeniach
+      - jeśli się na to zgodzisz.</p> <p>Możesz również się zarejestrować kontaktując
+      się bezpośrednio z nami: michal@zapu.net</p> '
+    registration_closed_html: ' <h2> Rejestracja (zamknięta) </h2> <p> Rejestracja została zamknięta. Możesz przyjść ale istnieje prawdopodobieństwo, że sala będzie już pełna i zabraknie dla Ciebie miejsca - przepraszamy z góry, jeśli taka sytuacja zaistnieje (przychodzisz na własne ryzyko).</p>'
     stream_html: "
                     <h2> Oglądaj na żywo </h2>
                     <p>
@@ -108,6 +122,8 @@ pl:
   notice:
     registration:
       success: "Rejestracja zakończona sukcesem"
+      success_seated: "Rejestracja zakończona sukcesem. Typ rejestracji: miejsce siedzące"
+      success_standing: "Rejestracja zakończona sukcesem. Typ rejestracji: miejsce stojące"
       resignation_success_html:  "<h1> Twoja rejestracja na wykład została odwołana </h1>
   <p> Możesz przyjść mimo to. O ile starczy miejsca dla niezarejestrowanych </p>
   <p> Zachowaliśmy Twój adres e-mail i preferencje dotyczące informacji o wydarzeniach organizowanych przez PW. Jeśli chcesz je usunąć skontaktuj się z administratorem: michal@zapu.net </p>
@@ -121,3 +137,9 @@ pl:
   attendees:
     error_explanation: "Wystąpiły następujące błędy:"
 
+  registration:
+    closed: "Rejestracja została zamknięta. Możesz
+    przyjść ale istnieje prawdopodobieństwo, że sala będzie już pełna i zabraknie
+    dla Ciebie miejsca - przepraszamy z góry, jeśli taka sytuacja zaistnieje
+    (przychodzisz na własne ryzyko)."
+    changed: "Skończyły się miejsca siedzące. Zapoznaj się z nowymi zasadami (i inną godziną rejestracji) i zdecyduj, czy chcesz się zarejestrować"

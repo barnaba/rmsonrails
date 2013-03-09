@@ -24,6 +24,7 @@ end
 
 group :test, :development do
     gem "rspec-rails", "~> 2.0"
+    gem "debugger"
     gem "capistrano"
     gem "capistrano_colors"
     gem "rvm-capistrano"

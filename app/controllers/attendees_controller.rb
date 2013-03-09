@@ -37,7 +37,7 @@ class AttendeesController < ApplicationController
 
     respond_to do |format|
       if @attendee.save
-        format.html { redirect_to root_path, notice: t('notice.registration.success')}
+        format.html { redirect_to root_path, notice: t("notice.registration.success_#{@attendee.actual_registration_type}")}
         format.json { render json: @attendee, status: :created, location: @attendee }
       else
         @registration_in_progress = @attendee.errors.keys.any?
