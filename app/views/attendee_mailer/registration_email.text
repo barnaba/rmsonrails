@@ -1,4 +1,4 @@
-Potwierdzamy Twoją rejestrację na wykład RMS.
+<%= @name %>, potwierdzamy Twoją rejestrację na wykład RMS.
 
 Wykład odbędzie się 13 marca 2013 o godzinie 12:00 w Małej Auli Gmachu Głównego Politechniki Warszawskiej.
 

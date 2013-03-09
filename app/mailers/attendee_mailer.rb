@@ -12,6 +12,6 @@ class AttendeeMailer < ActionMailer::Base
                               when "standing"
                                 "Miejsce stojące"
                               end
-    mail(to: attendee.email, subject: "Potwierdzenie rejestracji na wykład Richarda Stallmana")
+    mail(to: attendee.email, subject: "Potwierdzenie rejestracji na wykład Richarda Stallmana", content_type: "text/plain")
   end
 end
