@@ -9,7 +9,8 @@ class StatsController < ApplicationController
     @stats = stats
     @mailing_stats = mailing_stats
     max_cap = 300
-    @capacity = [{x: Attendee.first.created_at.to_i, y: 300}, {x: Time.now.to_i, y: 300}]
+    @capacity = [{x: Attendee.first.created_at.to_i, y: APP_CONFIG['max_attendees']}, {x: Time.now.to_i, y: APP_CONFIG['max_attendees']}]
+    @seats = [{x: Attendee.first.created_at.to_i, y: APP_CONFIG['max_seats']}, {x: Time.now.to_i, y: APP_CONFIG['max_seats']}]
     @date_stats = date_stats
     add_last_day_if_needed
     @daily_subs = Marshal.load(Marshal.dump(date_stats));

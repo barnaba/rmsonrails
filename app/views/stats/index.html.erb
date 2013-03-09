@@ -109,7 +109,12 @@ var graph = new Rickshaw.Graph( {
                         color: palette.color()
                 },
                 {
-                        name: "Capacity",
+                        name: "limit miejsc siedzących",
+                        data: <%=@seats.to_json.html_safe %>,
+                        color: palette.color()
+                },
+                {
+                        name: "limit miejsc",
                         data: <%=@capacity.to_json.html_safe %>,
                         color: palette.color()
                 },
