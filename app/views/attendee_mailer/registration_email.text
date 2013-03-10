@@ -1,10 +1,16 @@
+
 <%= @name %>, potwierdzamy Twoją rejestrację na wykład RMS.
 
 Wykład odbędzie się 13 marca 2013 o godzinie 12:00 w Małej Auli Gmachu Głównego Politechniki Warszawskiej.
 
-Twoje dane:
-  nazwa: <%= @name %>
-  email: <%= @email%>
-  typ rejestracji: <%= @registration_type_text %>
+<% if @registration_type == "seated" %>
+Posiadasz rezerwację na miejsce siedzące.
+
+Zapraszamy od godziny 11:00 do 11:45 w celu zagwarantowania sobie skorzystania ze swojego miejsca. Od godziny 11:45 zaczniemy zapraszać osoby którym nie udało się zarejestrować na miejsce siedzące.
+<% else %>
+Posiadasz rezerwację na miejsce stojące - gwarancja wzięcia udziału w wykładzie, ale brak gwarancji miejsca siedzącego.
+
+Zapraszamy od godziny 11:45 do godziny 11:55 w celu zagwarantowania sobie wzięcia udziału w wykładzie. Dostępność miejsc siedzących będzie zależeć od frekwencji osób zarejestrowanych na miejsca siedzące. Od godziny 11:55 zaczniemy zapraszać osoby którym nie udało się zarejestrować.
+<% end %>
 
 W razie pytań prosimy o kontakt na e-mail michal@zapu.net
