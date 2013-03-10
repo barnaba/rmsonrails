@@ -1,0 +1,47 @@
+<%= @name %>, przypominamy o wykładzie RMS, który odbędzie się w tę środę o 12:00.
+
+<% if @registration_type == "seated" %>
+Zapraszamy od godziny 11:00 do 11:45 w celu zagwarantowania sobie
+skorzystania z zarezerwowanego miejsca siędzącego. Od godziny 11:45
+zaczniemy zapraszać osoby którym nie udało się zarejestrować na miejsce
+siedzące.
+<% else %>
+Zapraszamy od godziny 11:45 do godziny 11:55 w celu zagwarantowania
+sobie wzięcia udziału w wykładzie. Dostępność miejsc siedzących będzie
+zależeć od frekwencji osób zarejestrowanych na miejsca siedzące. Od
+godziny 11:55 zaczniemy zapraszać osoby którym nie udało się
+zarejestrować.
+<% end %>
+
+Prosimy, abyś pamiętał adres e-mail, którego użyłeś do
+rejestracji(<%=@email%>) - będzie potrzebny, żeby wejść do sali.
+
+Miejsce: 
+
+wykład odbędzie się w małej auli gmachu głównego politechniki
+warszawskiej. wchodząc głównym wejściem (od strony pl. politechniki)
+należy przejść przez hol, a następnie wejść po schodach na pierwsze
+piętro. mała aula znajduje się tuż przed schodami. 
+
+Jeśli nie możesz skorzystać ze schodów, musisz wejść na teren
+Politechniki od strony ulicy Noakowskiego. Na północnym dziedzińcu
+Gmachu Głównego znajduje się zewnętrzna winda, która zabierze cie na
+pierwsze piętro. po wyjściu z windy kieruj się korytarzem w prawo.
+
+Dojazd:
+
+Najbliżej Gmachu Głównego znajduje się przystanek Pl.Politechniki.
+Dojeżdżają tam tramwaje linii 10 (m.in. z dworca centralnego - około 4
+minut), 14 i 15. Więcej informacji na temat dojazdu komunikacją miejską
+możesz znaleźć np. na jakdojade.pl: http://tnij.org/dojazdrms
+
+Nie jesteśmy w stanie zapewnić naszym gościom miejsc parkingowych, a
+parkowanie w okolicach Politechniki w tygodniu jest dość uciążliwe -
+pamiętaj aby wziąć to pod uwagę, jeśli dojeżdżasz samochodem. 
+
+Parking rowerowy od ulicy Noakowskiego dostępny jest tylko dla
+studentów, ale przed Gmachem Głównym oraz na kampusie znajduje się kilka
+stojaków.
+
+W razie pytań prosimy o kontakt na e-mail michal@zapu.net
+
