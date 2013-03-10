@@ -14,14 +14,15 @@ zarejestrować.
 <% end %>
 
 Prosimy, abyś pamiętał adres e-mail, którego użyłeś do
-rejestracji(<%=@email%>) - będzie potrzebny, żeby wejść do sali.
+rejestracji - będzie potrzebny, żeby wejść do sali:
+<%=@email%>
 
-Miejsce: 
+Miejsce:
 
 wykład odbędzie się w małej auli gmachu głównego politechniki
 warszawskiej. wchodząc głównym wejściem (od strony pl. politechniki)
 należy przejść przez hol, a następnie wejść po schodach na pierwsze
-piętro. mała aula znajduje się tuż przed schodami. 
+piętro. mała aula znajduje się tuż przed schodami.
 
 Jeśli nie możesz skorzystać ze schodów, musisz wejść na teren
 Politechniki od strony ulicy Noakowskiego. Na północnym dziedzińcu
@@ -37,11 +38,12 @@ możesz znaleźć np. na jakdojade.pl: http://tnij.org/dojazdrms
 
 Nie jesteśmy w stanie zapewnić naszym gościom miejsc parkingowych, a
 parkowanie w okolicach Politechniki w tygodniu jest dość uciążliwe -
-pamiętaj aby wziąć to pod uwagę, jeśli dojeżdżasz samochodem. 
+pamiętaj aby wziąć to pod uwagę, jeśli dojeżdżasz samochodem.
 
-Parking rowerowy od ulicy Noakowskiego dostępny jest tylko dla
+Strzeżony parking rowerowy od ulicy Noakowskiego dostępny jest tylko dla
 studentów, ale przed Gmachem Głównym oraz na kampusie znajduje się kilka
 stojaków.
+
 
 W razie pytań prosimy o kontakt na e-mail michal@zapu.net
 
