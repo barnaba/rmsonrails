@@ -24,7 +24,16 @@ class StatsController < ApplicationController
     end
   end
 
+  def visits
+    @visits_stats = visits_stats
+  end
+
 private
+  def visits_stats
+    stats = File.open(APP_CONFIG["visits_path"], "rb").read.split("\n")
+    stats.map {|line| line.split(',')}.map {|line| {x: Date.parse(line.first).to_time.to_i, y: line.last.to_i}}
+  end
+
   def add_last_day_if_needed
     if Date.parse(@date_stats.last[:x]) != Date.today
       @date_stats << {x: Date.today.to_s, y: 0}

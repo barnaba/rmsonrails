@@ -41,27 +41,6 @@ margin-top: 620px;
         <div id="timeline"></div>
 </div>
 
-<table class="table">
-<thead>
-<td> Dzień </td>
-<td> Zapisanych </td>
-</thead>
-<% @date_stats.each_with_index do |tuple, index| %>
-<tr>
-<td> <%= tuple[:x] %> </td>
-<td> <%= tuple[:y] %> 
-<% if index == @date_stats.size - 1 %>
-  <% growing = Attendee.growing? %>
-  <span style="color:<%= (growing.first ? "green":"red") %>"><%= (growing.first ? "↑ " : "↓ ") %></span>
-  <%= growing.last %>
-<% end %>
-</td>
-</tr>
-<% end %>
-</table>
-
-<%= link_to "unikalni użytkownicy w ciągu dnia", visits_stats_path%>
-
 <script>
 
 Rickshaw.namespace('Rickshaw.Graph.Renderer.Line');
@@ -98,31 +77,11 @@ var graph = new Rickshaw.Graph( {
         element: document.querySelector("#chart"),
         width: 1024,
         height: 600,
-        renderer: 'line',
+        renderer: 'bar',
         series: [
                 {
-                        name: "Attendees",
-                        data: <%=@stats.to_json.html_safe %>,
-                        color: palette.color()
-                },
-                {
-                        name: "Mailing",
-                        data: <%=@mailing_stats.to_json.html_safe %>,
-                        color: palette.color()
-                },
-                {
-                        name: "limit miejsc siedzących",
-                        data: <%=@seats.to_json.html_safe %>,
-                        color: palette.color()
-                },
-                {
-                        name: "limit miejsc",
-                        data: <%=@capacity.to_json.html_safe %>,
-                        color: palette.color()
-                },
-                {
-                        name: "Daily attendees",
-                        data: <%=@daily_subs.to_json.html_safe %>,
+                        name: "unikalni użytkownicy",
+                        data: <%=@visits_stats.to_json.html_safe %>,
                         color: palette.color()
                 },
         ]
@@ -141,13 +100,6 @@ var legend = new Rickshaw.Graph.Legend( {
         element: document.querySelector('#legend'),
         graph: graph
 } );
-
-var annotator = new Rickshaw.Graph.Annotate({
-    graph: graph,
-    element: document.getElementById('timeline')
-});
-
-annotator.add(1362415333, "submitted to Wykop.pl");
 
 
 var offsetForm = document.getElementById('offset_form');

@@ -5,7 +5,11 @@ Rmsonrails::Application.routes.draw do
     end
   end
 
-  resources :stats, only: ['index']
+  resources :stats, only: ['index', 'visits'] do
+    collection do
+      get 'visits', :action => 'visits', as: 'visits'
+    end
+  end
 
   resources :pages, only:['streams', 'info', 'media', 'english'] do
     collection do
