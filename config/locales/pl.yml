@@ -31,6 +31,12 @@ pl:
   attendees:
     error_explanation: ! 'Wystąpiły następujące błędy:'
   content:
+    orgs_title: "Organizatorzy"
+    orgs:
+      ee: "Wydział Elektyczny PW"
+      pw: "Politechnika Warszawska"
+      kotik: "Koło KOTIK"
+      isoc: "ISOC Polska"
     bio_html: ! '<h2> Sylwetka gościa</h2> <p>Dr Richard Stallman zapoczątkował ruch
       wolnego oprogramowania w roku 1983 i rozpoczął rozwijanie systemu operacyjnego
       GNU (<a href="http://www.gnu.org/" target="_blank">www.gnu.org</a>) w roku 1984.
@@ -94,6 +100,9 @@ pl:
       ee.pw.edu.pl<br></p><p>Pytania i uwagi wysłane na powyższy adres przez osoby
       nie reprezentujące mediów mogą zostać przez nas wykorzystane, jeśli okażą się
       pomocne w organizacji wydarzenia. Jednak sam mail zapewne pozostanie bez odpowiedzi.<br></p> '
+    main_orgs_html: "<h3> Organizator główny </h3> <p> </p>"
+    secondary_orgs_html: "<h3> Współorganizatorzy </h3> <p> </p>"
+    supporting_media_html: "<h3> Partnerzy medialni</h3> <p> </p>"
     registration_closed_html: ! " <h2> Rejestracja (zamknięta) </h2>\r\n\r\n<p>  Rejestracja
       została zamknięta. Może się jednak okazać, że znajdziemy dla Ciebie miejsce
       na sali - w przypadku kiedy nie zjawią się wszyscy zarejestrowani uczestnicy.
@@ -319,4 +328,3 @@ pl:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: pm
-
