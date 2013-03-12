@@ -153,7 +153,7 @@ ul.org {
     margin-right: auto;
     width: 1000px;
   }
-  aside {
+  #wrap > aside {
     margin: 0px;
     width: 270px;
     height: 405px;
@@ -195,5 +195,22 @@ ul.org {
   nav .nav-tabs {
     border-bottom: 1px solid $decal-color;
     display:block;
+  }
+}
+
+#stream aside {
+  margin: 10px;
+  border: 2px $decal-color solid;
+  background-color: #E6E6E6;
+  padding:20px;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  img {
+    margin-bottom: 10px;
   }
 }
