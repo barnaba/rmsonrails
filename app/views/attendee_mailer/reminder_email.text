@@ -3,31 +3,31 @@
 <% if @registration_type == "seated" %>
 Zapraszamy od godziny 11:00 do 11:45 w celu zagwarantowania sobie
 skorzystania z zarezerwowanego miejsca siędzącego. Od godziny 11:45
-zaczniemy zapraszać osoby którym nie udało się zarejestrować na miejsce
+zaczniemy zapraszać osoby, którym nie udało się zarejestrować na miejsce
 siedzące.
 <% else %>
 Zapraszamy od godziny 11:45 do godziny 11:55 w celu zagwarantowania
 sobie wzięcia udziału w wykładzie. Dostępność miejsc siedzących będzie
 zależeć od frekwencji osób zarejestrowanych na miejsca siedzące. Od
-godziny 11:55 zaczniemy zapraszać osoby którym nie udało się
+godziny 11:55 zaczniemy zapraszać osoby, którym nie udało się
 zarejestrować.
 <% end %>
 
-Prosimy, abyś pamiętał adres e-mail, którego użyłeś do
-rejestracji - będzie potrzebny, żeby wejść do sali:
+Prosimy, abyś pamiętał adres e-mail, którego użyłeś do rejestracji - będzie
+potrzebny, żeby wejść do sali:
 <%=@email%>
 
 Miejsce:
 
 wykład odbędzie się w małej auli Gmachu Głównego Politechniki
 Warszawskiej. wchodząc głównym wejściem (od strony Pl. Politechniki)
-należy przejść przez hol, a następnie wejść po schodach na pierwsze
-piętro. mała aula znajduje się tuż przed schodami.
+należy przejść przez hol, a następnie wejść po schodach na drugie
+piętro. Mała Aula znajduje się tuż przed schodami.
 
-Jeśli nie możesz skorzystać ze schodów, musisz wejść na teren
-Politechniki od strony ulicy Noakowskiego. Na północnym dziedzińcu
-Gmachu Głównego znajduje się zewnętrzna winda, która zabierze Cie na
-pierwsze piętro. Po wyjściu z windy kieruj się korytarzem w prawo.
+Jeśli nie możesz skorzystać ze schodów, wejdź na teren Politechniki od strony
+ulicy Noakowskiego. Na północnym dziedzińcu Gmachu Głównego znajduje się
+zewnętrzna winda, która zabierze Cie na drugie piętro. Po wyjściu z windy
+kieruj się korytarzem w prawo.
 
 Dojazd:
 
@@ -44,6 +44,18 @@ Strzeżony parking rowerowy od ulicy Noakowskiego dostępny jest tylko dla
 studentów, ale przed Gmachem Głównym oraz na kampusie znajduje się kilka
 stojaków.
 
+Media społecznościowe:
+
+Zachęcamy do korzystania z serwisów społecznościowych.
+
+Sugerujemy taga #rms2013 (g+, twitter, status.net). Wykład ma też swoją
+stronę na fb: https://www.facebook.com/events/128321034014775/
+
+Niestety nie będziemy w stanie zapewnić dostępu do sieci przez WiFi.
+
+
 
 W razie pytań prosimy o kontakt na e-mail michal@zapu.net
 
+Do zobaczenia w środę,
+Zespół rms2013.pl
