@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
       active = !(res.body =~ /Strumieniowanie jeszcze nie rozpocz/)
       puts active.inspect
       @stream_active = active
-    rescue
+    rescue Exception
       @stream_active = false
     end
   end
