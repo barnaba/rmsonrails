@@ -1,145 +1,322 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 pl:
-  layout:
-    organized_by: "Oganizatorzy"
-    media_partners: "Patroni medialni"
-    title: "Richard Stallman - Warszawa, 13 Marca 2013"
-    header_html: "Richard Stallman <br /> Wizyta w Warszawie 13 marca 2013"
-    picture_alt: "Richard Stallman"
-    attribution_html: 'Zdjęcie Richarda Stallmana użyte na stronie jest <a href="https://secure.flickr.com/photos/hko_s/7543575412/">udostępnione</a> na licencji Creative Commons Attribution 2.0 Generic przez autora: Heiko S.'
-    tabs:
-      main: "Program"
-      bio: "O gościu"
-      lecture: "wykład"
-      registration: "Rejestracja"
-      stream: "Stream"
-      media: "Dla mediów"
-      in_english: "In English"
-
-  content:
-    in_english:
-      title: "Richard Stallman at Warsaw University of Technology"
-      content_html: "
-      <p>Richard Stallman famous computer programmer and software freedom activist will give a talk entitled \"A Free Digital Society\" at Warsaw University of Technology on March 13th 2013 (Wednesday) at 12:00.</p>
-
-      <p>Stallman, also known as \"rms\", is a leader of the free software movement. He is a creator of widely used gcc compiler, GNU tools library, and original author Emacs editor. Currently he is involved in campaigning against software patents, digital rights management, and copyright overuse. Popular GPL licence model is his contribution into world of public software development.</p>
-
-      <p>Talk will take place at the Main Building of Warsaw University of Technology (pl. Politechniki 1, Warsaw) at lecture hall \"Mala Aula\". It will start at 12pm, and least (with discussion) approx. 2 hours.</p>
-
-      <p>Registration is optional. But if you want to be sure to have place to seat, please fill %{link}.</p>
-
-      <p>In case of questions or any other problems don't hesitate to ask <a href=\"mailto:michal@zapu.net\"> michal@zapu.net</a> </p>"
-      registration_link: "registration form"
-    brama_does_streaming_html: 'Streaming zapewnia Laboratorium Technik Mobilnych <a href="http://brama.elka.pw.edu.pl">BRAMA</a>.'
-    main_html: "<h2> Program wizyty </h2>
-                    <p>
-                      12 marca 2013 do Polski przyleci Richard Stallman. Celem jego wizyty jest Studencki Festiwal Informatyczny, który odbywa się w dniach 14-16 marca na krakowskiej Akademii Górniczo-Hutniczej[a]. Dzień wcześniej, 13 marca odbędzie się cykl spotkań ze Stallmanem w Warszawie.
-                      <p>
-                        Głównym z nich jest wykład, który odbędzie się o godz. 12 na Politechnice Warszawskiej. Tego dnia Stallman odwiedzi również Fundację Nowoczesna Polska, Centrum Cyfrowe (godz. 18) oraz Warszawski Hackerspace (godz. 21).
-                      </p>
-                    </p>"
-    bio_html: "<h2> Sylwetka gościa</h2>
-                    <p>
-                      Dr Richard Stallman zapoczątkował ruch wolnego oprogramowania w roku 1983 i rozpoczął rozwijanie systemu operacyjnego GNU (www.gnu.org) w roku 1984. GNU jest wolnym oprogramowaniem: każdemu wolno je kopiować i rozpowszechniać zarówno ze zmianami jak i bez. System GNU/Linux, czyli system operacyjny GNU z dodanym Linuksem jest dziś używany na dziesiątkach milionów komputerów. 
-                    </p>
-                    <p>
-                      Stallman otrzymał nagrodę ACM imienia Grace Hopper, stypendium Fundacji MacArthur, Nagrodę Pioniera od Electronic Frontier Foundation, Nagrodę Takeda za „Ulepszenia Społeczno-Ekonomiczne”, a także kilka honorowych doktoratów.
-                    </p>"
-    lecture_html: "
-                    <h2> Szczegółowe informacje o wykładzie</h2>
-                      <p> Wykład odbędzie się <b>12 marca 2013 o godzinie 12:00</b> w Małej Auli Gmachu Głównego Politechniki Warszawskiej </p>
-                    <p>
-                      Tytuł wykładu to „Wolne społeczeństwo cyfrowe” (oryg. „A free digital society”). Wiele w Polsce mówi się o tak zwanym „cyfrowym wykluczeniu” jako przeciwieństwie partycypacji w osiągnięciach najnowszej techniki, w szczególności komputerowej. Traktuje się przy tym cyfrowe wykluczenie bezwzględnie jako zło, które należy likwidować, a to z kolei oznacza automatyczne wprowadzenie w to miejsce czegoś dobrego. Stallman oferuje głębszą refleksję nad pytaniem o dobre i złe strony cyfrowego uczestnictwa w kulturze.
-                    </p>
-                    <p>
-                      Według Stallmana: „Działania zmierzające do włączenia większej liczby osób w używanie cyfrowych technologii oparte są na założeniu, że niewątpliwie taka partycypacja jest rzeczą bez wątpienia dobrą. Z praktycznego punktu widzenia to bardzo wygodna teza. Wydaje się tak, jesli bierzemy pod uwagę jedynie praktyczną wygodę. Jednakże, jeśli jednak spojrzymy na nią z perspektywydokonamy oceny również pod względem praw człowieka, takie cyfrowe włączenie może być zarówno dobre jak i złe – w zależności od tego, do jakiego rodzaju cyfrowego świata zostajemy włączeni. Jeśli naszym celem jest cyfrowa partycypacja, powinniśmy mieć pewność, że jest to rzecz dobra.”
-                    </p>
-                    "
-    registration_seated_html: ' <h2> Rejestracja (opcjonalna) </h2> <p> Rejestracja <b>nie</b>
-      jest obowiązkowa, ale osoby zarejestrowane będą miały <b>pierwszeństwo</b> w
-      wypadku braku miejsc na sali (miejsca na około 300 osób). </p> <p> Rejestracja
-      dotyczy tylko głównego spotkania - wykładu Richarda Stallmana na Politechnice
-      Warszawskiej </p> <p> Zbierane dane zostaną wykorzystane tylko przez obsługę
-      spotkania. Możliwe że e-mail będzie potrzebny do potwierdzenia rejestracji na
-      kilka dni przed spotkaniem. Może być także użyty do przesyłania informacji o
-      ważnych zmianach w programie spotkania lub informacjach o podobnych wydarzeniach
-      - jeśli się na to zgodzisz.</p> <p>Możesz również się zarejestrować kontaktując
-      się bezpośrednio z nami: michal@zapu.net</p> '
-    registration_standing_html: ' <h2> Rejestracja (miejsca stojące) </h2> <p> Rejestracja <b>nie</b>
-      jest obowiązkowa, ale osoby zarejestrowane będą miały <b>pierwszeństwo</b> w
-      wypadku braku miejsc na sali (miejsca na około 300 osób). </p> <p> Rejestracja
-      dotyczy tylko głównego spotkania - wykładu Richarda Stallmana na Politechnice
-      Warszawskiej </p> <p> Zbierane dane zostaną wykorzystane tylko przez obsługę
-      spotkania. Możliwe że e-mail będzie potrzebny do potwierdzenia rejestracji na
-      kilka dni przed spotkaniem. Może być także użyty do przesyłania informacji o
-      ważnych zmianach w programie spotkania lub informacjach o podobnych wydarzeniach
-      - jeśli się na to zgodzisz.</p> <p>Możesz również się zarejestrować kontaktując
-      się bezpośrednio z nami: michal@zapu.net</p> '
-    registration_closed_html: ' <h2> Rejestracja (zamknięta) </h2> <p> Rejestracja została zamknięta. Możesz przyjść ale istnieje prawdopodobieństwo, że sala będzie już pełna i zabraknie dla Ciebie miejsca - przepraszamy z góry, jeśli taka sytuacja zaistnieje (przychodzisz na własne ryzyko).</p>'
-    stream_html: "
-                    <h2> Oglądaj na żywo </h2>
-                    <p>
-                      Planujemy umożliwić oglądanie zarówno wykładu jak i spotkania dyskusyjnego na żywo. Więcej informacji wkrótce.
-                    </p>
-                    "
-    media_info_html: "<h2> Nic tu nie ma </h2> <p> Wkrótce się coś pojawi </p> "
-    main_orgs_html: "<h3> Organizator główny </h3> <p> </p>"
-    secondary_orgs_html: "<h3> Współorganizatorzy </h3> <p> </p>"
-    supporting_media_html: "<h3> Partnerzy medialni</h3> <p> </p>"
-    orgs_title: "Organizatorzy"
-    orgs:
-      ee: "Wydział Elektyczny PW"
-      pw: "Politechnika Warszawska"
-      kotik: "Koło KOTIK"
-      isoc: "ISOC Polska"
-
-
-  helpers:
-    label:
-      attendee:
-        kotik_mailing:  "Chcę otrzymywać informacje o podobnych wydarzeniach organizowanych przez Politechnikę Warszawską"
-        name: "Imię i Naziwsko (opcjonalne)"
-        captcha: "Tekst z obrazka"
-
   activerecord:
     attributes:
       attendee:
-        Surename: "Nazwisko"
+        Email: Email
+        Surename: Nazwisko
+        email: Email
     errors:
+      messages:
+        record_invalid: ! 'Validation failed: %{errors}'
+        taken: has already been taken
       models:
         attendee:
           attributes:
-            surname:
-              blank: "Pole 'Imię' nie może być puste."
-            name:
-              blank: "Pole 'Nazwisko' nie może być puste."
+            Email:
+              invalid: Podany adres email jest nieprawidłowy.
+              taken: ! 'Podany adres email jest już zarejestrowany. Skontaktuj się
+                z osobą odpowiedzialną za rejestrację: michal@zapu.net'
+            Surname:
+              blank: Pole 'Imię' nie może być puste.
             email:
-              invalid: "Podany adres email jest nieprawidłowy."
-              taken:   "Podany adres email jest już zarejestrowany. Skontaktuj się z osobą odpowiedzialną za rejestrację: michal@zapu.net"
+              invalid: is invalid
+              taken: ! 'Podany adres email jest już zarejestrowany. Skontaktuj się
+                z osobą odpowiedzialną za rejestrację: michal@zapu.net'
+            name:
+              blank: Pole 'Nazwisko' nie może być puste.
+            surname:
+              blank: Pole 'Imię' nie może być puste.
+    models:
+      attendee: Attendee
+  attendees:
+    error_explanation: ! 'Wystąpiły następujące błędy:'
+  content:
+    bio_html: ! '<h2> Sylwetka gościa</h2> <p>Dr Richard Stallman zapoczątkował ruch
+      wolnego oprogramowania w roku 1983 i rozpoczął rozwijanie systemu operacyjnego
+      GNU (<a href="http://www.gnu.org/" target="_blank">www.gnu.org</a>) w roku 1984.
+      GNU jest wolnym oprogramowaniem: każdemu wolno je kopiować i rozpowszechniać
+      zarówno ze zmianami jak i bez. System GNU/Linux, czyli system operacyjny GNU
+      z dodanym Linuksem jest dziś używany na dziesiątkach milionów komputerów. </p>
+      <p> Stallman otrzymał nagrodę ACM imienia Grace Hopper, stypendium Fundacji
+      MacArthur, Nagrodę Pioniera od Electronic Frontier Foundation, Nagrodę Takeda
+      za „Ulepszenia Społeczno-Ekonomiczne”, a także kilka honorowych doktoratów.
+      </p>'
+    brama_does_streaming_html: Streaming zapewnia Laboratorium Technik Mobilnych <a
+      href="http://brama.elka.pw.edu.pl">BRAMA</a>
+    in_english:
+      content_html: ! ' <p>Richard Stallman famous computer programmer and software
+        freedom activist will give a talk entitled "A Free Digital Society" at Warsaw
+        University of Technology on March 13th 2013 (Wednesday) at 12:00.</p>
 
+        <p>Stallman, also known as "rms", is a leader of the free software movement.
+        He is a creator of widely used gcc compiler, GNU tools library, and original
+        author Emacs editor. Currently he is involved in campaigning against software
+        patents, digital rights management, and copyright overuse. Popular GPL licence
+        model is his contribution into world of public software development.</p>
+
+        <p>Talk will take place at the Main Building of Warsaw University of Technology
+        (pl. Politechniki 1, Warsaw) at lecture hall "Mala Aula". It will start at
+        12pm, and least (with discussion) approx. 2 hours.</p>
+
+        <p>Registration is optional. But if you want to be sure to have place to seat,
+        please fill %{link}.</p>
+
+        <p>In case of questions or any other problems don''t hesitate to ask <a href="mailto:michal@zapu.net">
+        michal@zapu.net</a> </p>'
+      registration_link: registration form
+      title: Richard Stallman at Warsaw University of Technology
+    lecture_html: ! " <h2>Szczegółowe informacje o wykładzie</h2> <p>Wykład odbędzie
+      się <b>13 marca 2013 o godzinie 12:00</b> w Małej Auli Gmachu Głównego Politechniki
+      Warszawskiej</p>\r\n\r\n<p>Tytuł wykładu to „Wolne społeczeństwo cyfrowe” (oryg.
+      „A free digital society”). Wiele w Polsce mówi się o tak zwanym „cyfrowym wykluczeniu”
+      jako przeciwieństwie partycypacji w osiągnięciach najnowszej techniki, w szczególności
+      komputerowej. Traktuje się przy tym cyfrowe wykluczenie bezwzględnie jako zło,
+      które należy likwidować, a to z kolei oznacza automatyczne wprowadzenie w to
+      miejsce czegoś dobrego. Stallman oferuje głębszą refleksję nad pytaniem o dobre
+      i złe strony cyfrowego uczestnictwa w kulturze. </p>\r\n\r\n<p>Prelegent opisuje
+      wykład następująco: <i>Activities directed at „including” more people in the
+      use of digital technology are predicated on the assumption that such inclusion
+      is invariably a good thing. It appears so, when judged solely by immediate practical
+      convenience. However, if we also judge in terms of human rights, whether digital
+      inclusion is good or bad depends on what kind of digital world we are to be
+      included in. If we wish to work towards digital inclusion as a goal, it behooves
+      us to make sure it is the good kind.</i></p>"
+    main_html: ! "<h2> Program wizyty</h2><h3>13 marca</h3>Cykl spotkań w Warszawie:<br><ul><li><b>12:00
+      - 14:00 - wykład na Politechnice Warszawskiej</b>; sala: <b>Gmach Główny - Mała
+      Aula</b><br></li>\r\n<li>14:00 - konferencja prasowa, tylko dla mediów; Gmach
+      Starej Kotłowni, sala nr 4</li>\r\n<li>18:00 - spotkanie w <a href=\"http://centrumcyfrowe.pl/richard-stallman-spotkanie-w-centrum-cyfrowym/\"
+      target=\"_blank\">Centrum Cyfrowym</a><br></li></ul><p></p><h3>14 marca</h3>Wyjazd
+      do Krakowa, na <a href=\"http://sfi.org.pl/\" target=\"_blank\">Studencki Festiwal
+      Informatyczny</a>, który zaprosił Stallmana i sfinansował jego przylot do Polski.<p></p>
+      <p></p>"
+    media_info_html: ! '<h2>Dla mediów<br></h2> <p>W przypadku pytań szczegółowych
+      ze strony mediów prosimy o kontakt pocztą elektroniczną: lukasz.makowski &gt;na&lt;
+      ee.pw.edu.pl<br></p><p>Pytania i uwagi wysłane na powyższy adres przez osoby
+      nie reprezentujące mediów mogą zostać przez nas wykorzystane, jeśli okażą się
+      pomocne w organizacji wydarzenia. Jednak sam mail zapewne pozostanie bez odpowiedzi.<br></p> '
+    registration_closed_html: ! " <h2> Rejestracja (zamknięta) </h2>\r\n\r\n<p>  Rejestracja
+      została zamknięta. Może się jednak okazać, że znajdziemy dla Ciebie miejsce
+      na sali - w przypadku kiedy nie zjawią się wszyscy zarejestrowani uczestnicy.
+      Zapraszamy <b>od godziny 11:55</b>. Nie możemy jednak zagwarantować możliwości
+      wzięcia udziału w wykładzie - bardzo możliwe, że o 12:00 drzwi będą już zamknięte.</p><p>W
+      razie pytań związanych z rejestracją, możesz kontaktować się z: michal@zapu.net</p>"
+    registration_html: ! ' <h2> Rejestracja (opcjonalna) </h2> <p> Rejestracja <b>nie</b>
+      jest obowiązkowa, ale osoby zarejestrowane będą miały <b>pierwszeństwo</b> w
+      wypadku braku miejsc na sali (miejsca na około 300 osób). </p> <p> Rejestracja
+      dotyczy tylko głównego spotkania - wykładu Richarda Stallmana na Politechnice
+      Warszawskiej </p> <p> Zbierane dane zostaną wykorzystane tylko przez obsługę
+      spotkania. Możliwe że e-mail będzie potrzebny do potwierdzenia rejestracji na
+      kilka dni przed spotkaniem. Może być także użyty do przesyłania informacji o
+      ważnych zmianach w programie spotkania lub informacjach o podobnych wydarzeniach
+      - jeśli się na to zgodzisz.</p> <p>Możesz również się zarejestrować kontaktując
+      się bezpośrednio z nami: michal@zapu.net</p> '
+    registration_seated_html: ! ' <h2> Rejestracja (opcjonalna) </h2> <p> Rejestracja
+      <b>nie</b> jest obowiązkowa, ale osoby zarejestrowane będą miały <b>pierwszeństwo</b>
+      w wypadku braku miejsc na sali (miejsca na około 300 osób). </p><p>Rejestrujesz
+      się na miejsce <b>siedzące</b>. Zapraszamy <b>od godziny 11:00 do 11:45</b>.
+      Przyjście po godzinie 11:45 oznacza rezygnację z rezerwacji miejsca siedzącego.
+      Wtedy zaczniemy na salę zapraszać te osoby, dla których nie przewidzieliśmy
+      miejsc siedzących ale będą one mogły takie zająć, jeśli je znajdą.</p> <p> Rejestracja
+      dotyczy tylko głównego spotkania - wykładu Richarda Stallmana na Politechnice
+      Warszawskiej </p> <p> Zbierane dane zostaną wykorzystane tylko przez obsługę
+      spotkania. Możliwe że e-mail będzie potrzebny do potwierdzenia rejestracji na
+      kilka dni przed spotkaniem. Może być także użyty do przesyłania informacji o
+      ważnych zmianach w programie spotkania lub informacjach o podobnych wydarzeniach
+      - jeśli się na to zgodzisz.</p> <p>Możesz również się zarejestrować kontaktując
+      się bezpośrednio z nami: michal@zapu.net</p> '
+    registration_standing_html: ! '<p></p><h2>Rejestracja (opcjonalna)</h2><p style="font-size:
+      13px;">Rejestracja&nbsp;<b style="font-size: 13px;">nie</b>&nbsp;jest obowiązkowa,
+      ale osoby zarejestrowane będą miały&nbsp;<b style="font-size: 13px;">pierwszeństwo</b>&nbsp;w
+      wypadku braku miejsc na sali (miejsca na około 300 osób).</p><p style="font-size:
+      13px;">Niestety wszystkie miejsca siedzące zostały zarezerwowane. Rejestrujesz
+      się na miejsce&nbsp;<b style="font-size: 13px;">stojące</b><span style="font-size:
+      13px;">*</span>. Zapraszamy&nbsp;<b style="font-size: 13px;">od godziny 11:45
+      do 11:55 </b><span style="font-size: 13px;">w celu znalezienia sobie miejsca
+      na sali. Od godziny 11:55 zaczniemy zapraszać osoby, które się nie zarejestrowały.</span></p><p
+      style="font-size: 13px;"><i>*Miejsce stojące</i> - gwarancja wzięcia udziału
+      w wykładzie, <b>ale brak gwarancji miejsca siedzącego</b> - jest to zależne
+      od frekwencji osób zarejestrowanych na miejsca siedzące.</p><p style="font-size:
+      13px;">Rejestracja dotyczy tylko głównego spotkania - wykładu Richarda Stallmana
+      na Politechnice Warszawskiej</p><p style="font-size: 13px;">Zbierane dane zostaną
+      wykorzystane tylko przez obsługę spotkania. Możliwe że e-mail będzie potrzebny
+      do potwierdzenia rejestracji na kilka dni przed spotkaniem. Może być także użyty
+      do przesyłania informacji o ważnych zmianach w programie spotkania lub informacjach
+      o podobnych wydarzeniach - jeśli się na to zgodzisz.</p><p style="font-size:
+      13px;">Możesz również się zarejestrować kontaktując się bezpośrednio z nami:
+      michal@zapu.net</p><p></p>'
+    stream_html: ! ' <h2> Oglądaj na żywo </h2> <p> Planujemy umożliwić oglądanie
+      zarówno wykładu jak i spotkania dyskusyjnego na żywo. Więcej informacji wkrótce.
+      </p> '
+    supporting_media_html: <h3> Patroni medialni </h3>
+  date:
+    formats:
+      default: ! '%Y-%m-%d'
+      long: ! '%B %d, %Y'
+      short: ! '%b %d'
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: about 1 hour
+        other: about %{count} hours
+      about_x_months:
+        one: about 1 month
+        other: about %{count} months
+      about_x_years:
+        one: about 1 year
+        other: about %{count} years
+      almost_x_years:
+        one: almost 1 year
+        other: almost %{count} years
+      half_a_minute: half a minute
+      less_than_x_minutes:
+        one: less than a minute
+        other: less than %{count} minutes
+      less_than_x_seconds:
+        one: less than 1 second
+        other: less than %{count} seconds
+      over_x_years:
+        one: over 1 year
+        other: over %{count} years
+      x_days:
+        one: 1 day
+        other: ! '%{count} days'
+      x_minutes:
+        one: 1 minute
+        other: ! '%{count} minutes'
+      x_months:
+        one: 1 month
+        other: ! '%{count} months'
+      x_seconds:
+        one: 1 second
+        other: ! '%{count} seconds'
+    prompts:
+      day: Day
+      hour: Hour
+      minute: Minute
+      month: Month
+      second: Seconds
+      year: Year
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: must be accepted
+      blank: can't be blank
+      confirmation: doesn't match confirmation
+      empty: can't be empty
+      equal_to: must be equal to %{count}
+      even: must be even
+      exclusion: is reserved
+      greater_than: must be greater than %{count}
+      greater_than_or_equal_to: must be greater than or equal to %{count}
+      inclusion: is not included in the list
+      invalid: is invalid
+      less_than: must be less than %{count}
+      less_than_or_equal_to: must be less than or equal to %{count}
+      not_a_number: is not a number
+      not_an_integer: must be an integer
+      odd: must be odd
+      too_long: is too long (maximum is %{count} characters)
+      too_short: is too short (minimum is %{count} characters)
+      wrong_length: is the wrong length (should be %{count} characters)
+  helpers:
+    button:
+      create: Create %{model}
+      submit: Save %{model}
+      update: Update %{model}
+    label:
+      attendee:
+        Surname: Nazwisko
+        captcha: Tekst z obrazka
+        kotik_mailing: Chcę otrzymywać informacje o podobnych wydarzeniach organizowanych
+          przez Politechnikę Warszawską
+        name: Imię i nazwisko (lub pseudonim, opcjonalne)
+    select:
+      prompt: Please select
+    submit:
+      create: Create %{model}
+      submit: Save %{model}
+      update: Update %{model}
+  layout:
+    attribution_html: ! 'Zdjęcie Richarda Stallmana użyte na stronie jest <a href="https://secure.flickr.com/photos/hko_s/7543575412/">udostępnione</a>
+      na licencji Creative Commons Attribution 2.0 Generic license przez autora: Heiko
+      S.'
+    header_html: Richard Stallman <br /> Wizyta w Warszawie - 13 marca 2013
+    media_partners: <h3>Patroni medialni</h3>
+    organized_by: Oganizatorzy
+    picture_alt: Richard Stallman
+    tabs:
+      bio: O gościu
+      in_english: In English
+      lecture: Wykład
+      main: Program
+      media: Dla mediów
+      registration: Rejestracja
+      stream: Stream
+    title: Richard Stallman - Warszawa, 13 Marca 2013
   notice:
     registration:
-      success: "Rejestracja zakończona sukcesem"
-      success_seated: "Rejestracja zakończona sukcesem. Typ rejestracji: miejsce siedzące"
-      success_standing: "Rejestracja zakończona sukcesem. Typ rejestracji: miejsce stojące"
-      resignation_success_html:  "<h1> Twoja rejestracja na wykład została odwołana </h1>
-  <p> Możesz przyjść mimo to. O ile starczy miejsca dla niezarejestrowanych </p>
-  <p> Zachowaliśmy Twój adres e-mail i preferencje dotyczące informacji o wydarzeniach organizowanych przez PW. Jeśli chcesz je usunąć skontaktuj się z administratorem: michal@zapu.net </p>
-      "
-      resignation_fail_html: "
-  <h1> Błąd, rejestracja nie mogła zostać odwołana </h1>
-  <p> Skontaktuj się z administratorem: michal@zapu.net </p>
-      "
-
-
-  attendees:
-    error_explanation: "Wystąpiły następujące błędy:"
-
+      resignation_fail_html: ! ' <h1> Błąd, rejestracja nie mogła zostać odwołana
+        </h1> <p> Skontaktuj się z administratorem: michal@zapu.net </p> '
+      resignation_success_html: ! '<h1> Twoja rejestracja na wykład została odwołana
+        </h1> <p> Możesz przyjść mimo to. O ile starczy miejsca dla niezarejestrowanych
+        </p> <p> Zachowaliśmy Twój adres e-mail i preferencje dotyczące informacji
+        o wydarzeniach organizowanych przez PW. Jeśli chcesz je usunąć skontaktuj
+        się z administratorem: michal@zapu.net </p> '
+      success: Rejestracja zakończona sukcesem
+      success_seated: ! "Rejestracja zakończona sukcesem. Typ rejestracji: miejsce
+        siedzące.\r\n\r\nZapraszamy od godziny 11:00 do 11:40 (później zaczniemy zapraszać
+        osoby dla których zabrakło miejsc siedzących)."
+      success_standing: ! 'Rejestracja zakończona sukcesem. Typ rejestracji: miejsce
+        stojące. Zapraszamy od godziny 11:40 do 12:00 (później zaczniemy zapraszać
+        osoby które się nie zarejestrowały).'
+  number:
+    currency:
+      format:
+        delimiter: ! ','
+        format: ! '%u%n'
+        separator: .
+        unit: $
+    format:
+      delimiter: ! ','
+      separator: .
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: Billion
+          million: Million
+          quadrillion: Quadrillion
+          thousand: Thousand
+          trillion: Trillion
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+  recaptcha:
+    errors:
+      verification_failed: Word verification response is incorrect, please try again.
   registration:
-    closed: "Rejestracja została zamknięta. Możesz
-    przyjść ale istnieje prawdopodobieństwo, że sala będzie już pełna i zabraknie
-    dla Ciebie miejsca - przepraszamy z góry, jeśli taka sytuacja zaistnieje
-    (przychodzisz na własne ryzyko)."
-    changed: "Skończyły się miejsca siedzące. Zapoznaj się z nowymi zasadami (i inną godziną rejestracji) i zdecyduj, czy chcesz się zarejestrować"
+    changed: Skończyły się miejsca siedzące. Zapoznaj się z nowymi zasadami (i inną
+      godziną rejestracji) i zdecyduj, czy chcesz się zarejestrować
+    closed: Rejestracja została zamknięta. Możesz przyjść ale istnieje prawdopodobieństwo,
+      że sala będzie już pełna i zabraknie dla Ciebie miejsca - przepraszamy z góry,
+      jeśli taka sytuacja zaistnieje (przychodzisz na własne ryzyko).
+  support:
+    array:
+      last_word_connector: ! ', and '
+      two_words_connector: ! ' and '
+      words_connector: ! ', '
+  time:
+    am: am
+    formats:
+      default: ! '%a, %d %b %Y %H:%M:%S %z'
+      long: ! '%B %d, %Y %H:%M'
+      short: ! '%d %b %H:%M'
+    pm: pm
+
