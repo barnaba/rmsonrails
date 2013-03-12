@@ -68,6 +68,7 @@ nav .nav-tabs {
 
 nav .nav-tabs > li {
   margin-bottom: -2px;
+  position:relative;
 }
 
 nav .nav-tabs > li > a {
@@ -75,6 +76,14 @@ nav .nav-tabs > li > a {
   font-weight: bold;
   color: black;
   margin-right: 0px;
+}
+
+nav .nav-tabs > li > a.stream-active {
+  color: #00AA00;
+}
+
+nav .nav-tabs > li.active > a.stream-active {
+  color: white;
 }
 
 nav .nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > li > a:hover {
