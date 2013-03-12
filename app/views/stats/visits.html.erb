@@ -81,11 +81,23 @@ var graph = new Rickshaw.Graph( {
         series: [
                 {
                         name: "unikalni użytkownicy",
-                        data: <%=@visits_stats.to_json.html_safe %>,
+                        data: <%=@unique_stats.to_json.html_safe %>,
+                        color: palette.color(),
+                        disabled: false,
+                },
+                {
+                        name: "unikalni użytkownicy : stream",
+                        data: <%=@unique_streams.to_json.html_safe %>,
+                        color: palette.color()
+                },
+                {
+                        name: "unikalni użytkownicy : in_english",
+                        data: <%=@unique_english.to_json.html_safe %>,
                         color: palette.color()
                 },
         ]
 } );
+graph.renderer.unstack = true;
 
 var x_axis = new Rickshaw.Graph.Axis.Time( { graph: graph } );
 
@@ -102,11 +114,11 @@ var legend = new Rickshaw.Graph.Legend( {
 } );
 
 
-var offsetForm = document.getElementById('offset_form');
-
 var hoverDetail = new Rickshaw.Graph.HoverDetail( {
     graph: graph
 } );
+
+
 
 
 graph.render();

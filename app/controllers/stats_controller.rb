@@ -25,13 +25,15 @@ class StatsController < ApplicationController
   end
 
   def visits
-    @visits_stats = visits_stats
+    @unique_stats = visits_stats("unikalni.txt")
+    @unique_streams = visits_stats("unikalni.stream.txt")
+    @unique_english = visits_stats("unikalni.english.txt")
   end
 
 private
-  def visits_stats
-    stats = File.open(APP_CONFIG["visits_path"], "rb").read.split("\n")
-    stats.map {|line| line.split(',')}.map {|line| {x: Date.parse(line.first).to_time.to_i, y: line.last.to_i}}
+  def visits_stats(filename)
+    stats = File.open(APP_CONFIG["visits_path"] + filename, "rb").read.split("\n")
+    stats.map {|line| line.split(',')}.map {|line| {x: Date.parse(line.first).to_time(:utc).to_i, y: line.last.to_i}}
   end
 
   def add_last_day_if_needed
