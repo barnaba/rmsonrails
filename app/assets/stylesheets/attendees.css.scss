@@ -198,19 +198,28 @@ ul.org {
   }
 }
 
-#stream aside {
-  margin: 10px;
-  border: 2px $decal-color solid;
-  background-color: #E6E6E6;
-  padding:20px;
-  -webkit-border-top-right-radius: 8px;
-  -webkit-border-bottom-right-radius: 8px;
-  -moz-border-radius-topright: 8px;
-  -moz-border-radius-bottomright: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+#stream {
+  iframe {
+    float:left; 
+    margin-right:20px;
+    box-shadow: 3px 3px 6px #666666;
+    margin-bottom: 30px;  
+    height: 384px;
+  }
+  aside {
+    margin: 10px;
+    border: 2px $decal-color solid;
+    background-color: #E6E6E6;
+    padding:20px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -moz-border-radius-bottomright: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 
-  img {
-    margin-bottom: 10px;
+    img {
+      margin-bottom: 10px;
+    }
   }
 }
