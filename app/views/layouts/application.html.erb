@@ -26,10 +26,7 @@
           <nav>
           <ul class="nav nav-tabs">
             <li <%=active_if('pages#info')%>><%= link_to t('layout.tabs.info'), root_path%></li>
-            <li <%=active_if('attendees#new')%>><%= link_to t('layout.tabs.registration'), new_attendee_path%></li>
-            <li <%=active_if('pages#streams')%>>
-              <%= link_to t('layout.tabs.stream'), streams_pages_path, {class: @stream_active ? "stream-active" : ""}%>
-            </li>
+            <li <%=active_if_photos%>><%= link_to 'zdjęcia', photo_albums_path%></li>
             <li <%=active_if('pages#media')%>><%= link_to t('layout.tabs.media'), media_pages_path%></li>
             <li <%=active_if('pages#english')%>><%= link_to t('layout.tabs.in_english'), english_pages_path%></li>
           </ul>

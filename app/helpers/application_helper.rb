@@ -7,4 +7,12 @@ module ApplicationHelper
       ''
     end
   end
+
+  def active_if_photos
+    if params[:controller] == "photo_albums"
+      'class=active'
+    else
+      ''
+    end
+  end
 end
