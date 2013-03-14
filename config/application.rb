@@ -58,5 +58,15 @@ module Rmsonrails
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    Spud::Photos.configure do |config|
+      config.photo_styles = {
+        :small => '150x150#',
+        :medium => '200x200#',
+        :large => '400x400#',
+        :huge => '600x600'
+      }
+    end
   end
+
 end
