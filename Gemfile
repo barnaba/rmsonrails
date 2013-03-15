@@ -9,6 +9,7 @@ gem "jquery-rails"
 gem 'pg'
 gem 'copycopter_client', '~> 2.0.1'
 gem 'spud_photos'
+gem 'newrelic_rpm'
 
 
 # Gems used only for assets and not required
