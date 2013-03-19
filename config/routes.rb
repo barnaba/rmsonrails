@@ -17,6 +17,7 @@ Rmsonrails::Application.routes.draw do
       get 'info', :action => 'info', as: 'info'
       get 'media', :action => 'media', as: 'media'
       get 'english', :action => 'english', as: 'english'
+      get 'downloads', :action => 'downloads', as: 'downloads'
     end
   end
 

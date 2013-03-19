@@ -27,6 +27,7 @@
           <ul class="nav nav-tabs">
             <li <%=active_if('pages#info')%>><%= link_to t('layout.tabs.info'), root_path%></li>
             <li <%=active_if_photos%>><%= link_to 'Zdjęcia', photo_albums_path%></li>
+            <li <%=active_if('pages#downloads')%>><%= link_to "Pobieranie", downloads_pages_path%></li>
             <li <%=active_if('pages#media')%>><%= link_to t('layout.tabs.media'), media_pages_path%></li>
             <li <%=active_if('pages#english')%>><%= link_to t('layout.tabs.in_english'), english_pages_path%></li>
           </ul>

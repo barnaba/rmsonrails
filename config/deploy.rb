@@ -42,6 +42,7 @@ namespace(:customs) do
     run <<-CMD
       ln -nfs #{shared_path}/config/database.yml #{release_path}/config/
       ln -nfs #{shared_path}/config/application.yml #{release_path}/config/
+      ln -nfs #{shared_path}/config/newrelic.yml #{release_path}/config/
     CMD
   end
 end

@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   caches_page :info, layout:false
-  caches_page :streams, :media, :english
+  caches_page :streams, :media, :english, :downloads
 
   def info
   end
@@ -13,6 +13,9 @@ class PagesController < ApplicationController
   end
 
   def english
+  end
+
+  def downloads
   end
 
 end
